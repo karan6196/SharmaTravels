@@ -1,0 +1,889 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sharma Tour &amp; Travels — Punjab to Delhi and beyond</title>
+<meta name="description" content="Sedans, SUVs and Tempo Travellers for Punjab–Delhi one-way trips and tour packages to Himachal, Kashmir, Uttarakhand, Rajasthan and Uttar Pradesh. Message us on WhatsApp for fares.">
+<link rel="icon" type="image/svg+xml" href="assets/logo-mark.svg">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Sharma Tour & Travels">
+<meta property="og:locale" content="en_IN">
+<meta property="og:url" content="https://sharmatourstravels.netlify.app/">
+<meta property="og:title" content="Sharma Tour & Travels — Punjab to Delhi and beyond">
+<meta property="og:description" content="Sedans, SUVs and Tempo Travellers for Punjab–Delhi one-way trips, plus tour packages to Himachal, Kashmir, Uttarakhand, Rajasthan and Uttar Pradesh. Message us on WhatsApp for fares.">
+<meta property="og:image" content="https://sharmatourstravels.netlify.app/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Sharma Tour & Travels — Punjab to Delhi and beyond">
+<meta name="twitter:description" content="Sedans, SUVs and Tempo Travellers for Punjab–Delhi one-way trips, plus tour packages to Himachal, Kashmir, Uttarakhand, Rajasthan and Uttar Pradesh.">
+<meta name="twitter:image" content="https://sharmatourstravels.netlify.app/assets/og-image.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;0,9..144,900;1,9..144,500&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0F1B2D;
+    --navy-2:#182A44;
+    --cream:#FAF3E4;
+    --cream-2:#F1E7CF;
+    --ink:#201A12;
+    --marigold:#E29B34;
+    --marigold-dark:#B87A1F;
+    --mustard:#C9A227;
+    --pine:#2F5233;
+    --ice:#3E7C99;
+    --clay:#A8471F;
+    --sandstone:#8B2E2E;
+    --line:rgba(15,27,45,0.14);
+    --line-onnavy:rgba(250,243,228,0.16);
+    --shadow:0 1px 0 rgba(15,27,45,0.05);
+  }
+
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:var(--cream);
+    color:var(--ink);
+    font-family:'Public Sans', system-ui, -apple-system, sans-serif;
+    font-size:17px;
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+  img,svg{display:block;max-width:100%;}
+  a{color:inherit;}
+  .wrap{max-width:1160px;margin:0 auto;padding:0 28px;}
+  h1,h2,h3{
+    font-family:'Fraunces', Georgia, serif;
+    font-weight:600;
+    line-height:1.08;
+    margin:0;
+    letter-spacing:-0.01em;
+  }
+  p{margin:0;}
+  .eyebrow-none{} /* intentionally no all-caps eyebrow labels used anywhere */
+
+  @media (prefers-reduced-motion: reduce){
+    *{animation-duration:0.01ms !important; animation-iteration-count:1 !important; transition-duration:0.01ms !important; scroll-behavior:auto !important;}
+  }
+
+  /* ---------- Buttons ---------- */
+  .btn{
+    display:inline-flex;
+    align-items:center;
+    gap:10px;
+    padding:14px 26px;
+    border-radius:999px;
+    font-family:'Public Sans',sans-serif;
+    font-weight:600;
+    font-size:16px;
+    text-decoration:none;
+    border:1.5px solid transparent;
+    cursor:pointer;
+    transition:transform .15s ease, background .2s ease, border-color .2s ease;
+  }
+  .btn:hover{transform:translateY(-2px);}
+  .btn-primary{background:var(--marigold); color:#20140a;}
+  .btn-primary:hover{background:var(--marigold-dark);}
+  .btn-ghost-dark{background:transparent;border-color:var(--line-onnavy);color:var(--cream);}
+  .btn-ghost-dark:hover{border-color:var(--cream);}
+  .btn-ghost-light{background:transparent;border-color:var(--line);color:var(--ink);}
+  .btn-ghost-light:hover{border-color:var(--ink);}
+  .btn svg{width:18px;height:18px;flex:none;}
+
+  /* ---------- Header ---------- */
+  header{
+    position:sticky;top:0;z-index:50;
+    background:rgba(15,27,45,0.92);
+    backdrop-filter:saturate(140%) blur(6px);
+    border-bottom:1px solid var(--line-onnavy);
+  }
+  .nav{
+    display:flex;align-items:center;justify-content:space-between;
+    padding:16px 28px;color:var(--cream);
+    max-width:1160px;margin:0 auto;
+  }
+  .nav-left{display:flex;align-items:center;}
+  .brand{display:flex;align-items:center;gap:10px;font-family:'Fraunces',serif;font-weight:700;font-size:20px;color:var(--cream);text-decoration:none;}
+  .brand .mark{width:30px;height:30px;flex:none;}
+  .navlinks{display:flex;align-items:center;gap:30px;}
+  .navlinks a{color:var(--cream);text-decoration:none;font-size:15px;opacity:.85;}
+  .navlinks a:hover{opacity:1;}
+  .navlinks .btn{padding:10px 20px;font-size:15px;}
+  .navtoggle{display:none;background:none;border:none;color:var(--cream);cursor:pointer;padding:6px;}
+  .navtoggle svg{width:26px;height:26px;}
+
+  .langswitch{display:flex;align-items:center;gap:2px;background:rgba(250,243,228,0.08);border:1px solid var(--line-onnavy);border-radius:999px;padding:3px;margin-left:18px;}
+  .langswitch button{
+    appearance:none;border:none;background:none;color:#C9CEDA;
+    font-family:'Public Sans',sans-serif;font-weight:600;font-size:12.5px;
+    padding:6px 11px;border-radius:999px;cursor:pointer;line-height:1;
+  }
+  .langswitch button.active{background:var(--marigold);color:#20140a;}
+  @media (max-width:520px){.langswitch{margin-left:10px;}.langswitch button{padding:6px 8px;font-size:12px;}}
+  @media (max-width:400px){.brand{font-size:16px;}.brand .mark{width:24px;height:24px;}}
+
+  @media (max-width:860px){
+    .navlinks{
+      position:fixed;top:64px;left:0;right:0;
+      background:var(--navy);
+      flex-direction:column;align-items:flex-start;
+      padding:8px 28px 24px;gap:18px;
+      border-bottom:1px solid var(--line-onnavy);
+      transform:translateY(-8px);
+      opacity:0;pointer-events:none;
+      transition:opacity .2s ease, transform .2s ease;
+    }
+    .navlinks.open{opacity:1;pointer-events:auto;transform:translateY(0);}
+    .navtoggle{display:block;}
+  }
+
+  /* ---------- Hero ---------- */
+  .hero{
+    background:radial-gradient(1100px 520px at 78% -10%, #21365a 0%, var(--navy) 55%), var(--navy);
+    color:var(--cream);
+    padding:76px 0 60px;
+    overflow:hidden;
+  }
+  .hero .wrap{display:grid;grid-template-columns:1.05fr 0.95fr;gap:56px;align-items:center;}
+  .hero h1{font-size:56px;color:var(--cream);}
+  .hero h1 .accent{color:var(--marigold);}
+  .hero .lede{margin-top:20px;font-size:19px;max-width:46ch;color:#D9D2C0;}
+  .hero .ctas{display:flex;gap:14px;margin-top:32px;flex-wrap:wrap;}
+  .hero .fineprint{margin-top:18px;font-size:14px;color:#9BA6B8;}
+
+  .routemap{position:relative;padding:26px 8px;}
+  .routemap .cities{display:flex;justify-content:space-between;font-family:'Fraunces',serif;font-weight:600;font-size:19px;color:var(--cream);margin-bottom:10px;}
+  .routemap .cities span:last-child{color:var(--marigold);}
+  .track{position:relative;height:2px;background:repeating-linear-gradient(90deg, var(--line-onnavy) 0 10px, transparent 10px 20px);margin:34px 0 18px;}
+  .track .dot{position:absolute;top:50%;width:9px;height:9px;border-radius:50%;background:var(--cream);transform:translate(-50%,-50%);}
+  .track .dot.start{left:0;}
+  .track .dot.end{left:100%;background:var(--marigold);}
+  .track .car{position:absolute;top:50%;width:30px;height:30px;transform:translate(-50%,-62%);animation:travel 6s linear infinite;}
+  .track .car svg{width:100%;height:100%;color:var(--marigold);}
+  @keyframes travel{
+    0%{left:0%;}
+    48%{left:96%;}
+    50%{left:96%;transform:translate(-50%,-62%) scaleX(-1);}
+    98%{left:0%;transform:translate(-50%,-62%) scaleX(-1);}
+    100%{left:0%;transform:translate(-50%,-62%) scaleX(1);}
+  }
+  .routestats{display:flex;gap:28px;margin-top:20px;flex-wrap:wrap;}
+  .routestats div{border-top:1px solid var(--line-onnavy);padding-top:10px;min-width:110px;}
+  .routestats .num{font-family:'Fraunces',serif;font-size:26px;font-weight:600;color:var(--cream);}
+  .routestats .lbl{font-size:13px;color:#9BA6B8;margin-top:2px;}
+
+  @media (max-width:940px){
+    .hero .wrap{grid-template-columns:1fr;}
+    .hero h1{font-size:40px;}
+    .hero{padding:52px 0 44px;}
+  }
+
+  /* ---------- Sections generic ---------- */
+  section{padding:88px 0;}
+  .section-head{max-width:640px;margin-bottom:48px;}
+  .section-head h2{font-size:38px;}
+  .section-head p{margin-top:14px;font-size:18px;color:#4B4535;}
+  .section-head.on-dark p{color:#C9CEDA;}
+  @media (max-width:640px){
+    section{padding:60px 0;}
+    .section-head h2{font-size:29px;}
+  }
+
+  /* ---------- About ---------- */
+  .about-grid{display:grid;grid-template-columns:1.15fr 0.85fr;gap:52px;align-items:start;}
+  .about-facts{display:flex;flex-direction:column;gap:18px;}
+  .about-facts > div{display:flex;gap:14px;border-left:3px solid var(--marigold);padding:2px 0 2px 16px;}
+  .about-facts svg{width:22px;height:22px;flex:none;margin-top:2px;color:var(--clay);}
+  .about-facts strong{display:block;font-family:'Fraunces',serif;font-weight:600;font-size:16.5px;margin-bottom:3px;}
+  .about-facts span{font-size:14px;color:#7A7259;}
+  @media (max-width:860px){.about-grid{grid-template-columns:1fr;}}
+
+  /* ---------- Fleet ---------- */
+  .fleet-group{margin-bottom:56px;}
+  .fleet-group:last-child{margin-bottom:0;}
+  .fleet-group h3{font-size:23px;margin-bottom:22px;padding-bottom:14px;border-bottom:1px solid var(--line);display:flex;align-items:baseline;justify-content:space-between;gap:16px;}
+  .fleet-group h3 .tag{font-family:'Public Sans',sans-serif;font-weight:600;font-size:14px;color:#7A7259;}
+  .cargrid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
+  .carcard{
+    border:1px solid var(--line);
+    border-radius:14px;
+    padding:26px 22px;
+    background:#fff;
+  }
+  .carcard.has-photo{padding:0;overflow:hidden;}
+  .carcard .photo{width:100%;height:168px;object-fit:cover;display:block;}
+  .carcard .carcard-body{padding:22px;}
+  .carcard .icon{width:58px;height:58px;color:var(--navy);margin-bottom:18px;}
+  .carcard h4{font-family:'Fraunces',serif;font-weight:600;font-size:19px;margin:0 0 6px;}
+  .carcard .seats{font-size:14px;color:#7A7259;margin-bottom:10px;}
+  .carcard .desc{font-size:15px;color:#4B4535;}
+  @media (max-width:900px){.cargrid{grid-template-columns:repeat(2,1fr);}}
+  @media (max-width:560px){.cargrid{grid-template-columns:1fr;}}
+
+  /* ---------- One-way route section ---------- */
+  .oneway{background:var(--navy);color:var(--cream);}
+  .oneway-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start;}
+  .oneway h3{font-size:22px;color:var(--cream);margin-bottom:14px;}
+  .citylist{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px;}
+  .citylist span{
+    border:1px solid var(--line-onnavy);
+    padding:8px 16px;border-radius:999px;font-size:14px;color:#D9D2C0;
+  }
+  .oneway ul{list-style:none;margin:22px 0 0;padding:0;display:flex;flex-direction:column;gap:14px;}
+  .oneway ul li{display:flex;gap:12px;font-size:16px;color:#D9D2C0;}
+  .oneway ul li svg{width:20px;height:20px;flex:none;color:var(--marigold);margin-top:2px;}
+  @media (max-width:860px){.oneway-grid{grid-template-columns:1fr;}}
+
+  /* ---------- Tours ---------- */
+  .tourgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;}
+  .tourcard{
+    border-radius:16px;padding:0;overflow:hidden;
+    color:var(--cream);
+    display:flex;flex-direction:column;
+    min-height:300px;
+  }
+  .tourcard .art{height:150px;position:relative;overflow:hidden;}
+  .tourcard .art img{width:100%;height:100%;object-fit:cover;display:block;}
+  .tourcard .art::after{content:"";position:absolute;inset:0;opacity:0.4;}
+  .t-himachal .art::after{background:#1f3b25;}
+  .t-kashmir .art::after{background:#26506a;}
+  .t-uttarakhand .art::after{background:#25451f;}
+  .t-rajasthan .art::after{background:#7d3416;}
+  .t-up .art::after{background:#6b2323;}
+  .tourcard .body{padding:22px 22px 26px;flex:1;display:flex;flex-direction:column;}
+  .tourcard h4{font-family:'Fraunces',serif;font-weight:600;font-size:22px;margin-bottom:8px;}
+  .tourcard .places{font-size:14px;color:rgba(255,255,255,0.78);margin-bottom:14px;}
+  .tourcard .body p.desc{font-size:15px;color:rgba(255,255,255,0.9);flex:1;}
+  .tourcard .cta{margin-top:18px;font-size:14px;font-weight:600;display:inline-flex;align-items:center;gap:6px;color:#fff;text-decoration:none;}
+  .tourcard .cta svg{width:15px;height:15px;}
+  .t-himachal{background:linear-gradient(160deg,#345b3a,#1f3b25);}
+  .t-kashmir{background:linear-gradient(160deg,#3e7c99,#26506a);}
+  .t-uttarakhand{background:linear-gradient(160deg,#3d6b3f,#25451f);}
+  .t-rajasthan{background:linear-gradient(160deg,#b4562a,#7d3416);}
+  .t-up{background:linear-gradient(160deg,#963636,#6b2323);}
+  @media (max-width:900px){.tourgrid{grid-template-columns:repeat(2,1fr);}}
+  @media (max-width:600px){.tourgrid{grid-template-columns:1fr;}}
+
+  /* ---------- Why us ---------- */
+  .whyus{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border-top:1px solid var(--line);}
+  .whyus div{padding:28px 22px;border-right:1px solid var(--line);}
+  .whyus div:last-child{border-right:none;}
+  .whyus .icon{width:30px;height:30px;color:var(--clay);margin-bottom:14px;}
+  .whyus h4{font-family:'Fraunces',serif;font-size:18px;font-weight:600;margin-bottom:8px;}
+  .whyus p{font-size:14.5px;color:#4B4535;}
+  @media (max-width:860px){
+    .whyus{grid-template-columns:1fr 1fr;}
+    .whyus div{border-bottom:1px solid var(--line);}
+    .whyus div:nth-child(2n){border-right:none;}
+  }
+  @media (max-width:520px){
+    .whyus{grid-template-columns:1fr;}
+  }
+
+  /* ---------- CTA band ---------- */
+  .ctaband{
+    background:var(--marigold);
+    color:#20140a;
+    text-align:center;
+  }
+  .ctaband h2{font-size:38px;max-width:640px;margin:0 auto;}
+  .ctaband p{margin-top:14px;font-size:18px;color:#40300f;}
+  .ctaband .ctas{margin-top:30px;display:flex;justify-content:center;gap:14px;flex-wrap:wrap;}
+  .ctaband .btn-primary{background:var(--navy);color:var(--cream);}
+  .ctaband .btn-primary:hover{background:#0a121e;}
+  .ctaband .btn-ghost-light{border-color:rgba(32,20,10,0.35);}
+  @media (max-width:640px){.ctaband h2{font-size:28px;}}
+
+  /* ---------- Footer ---------- */
+  footer{background:var(--navy);color:#9BA6B8;padding:48px 0 30px;}
+  .footgrid{display:flex;justify-content:space-between;flex-wrap:wrap;gap:32px;padding-bottom:30px;border-bottom:1px solid var(--line-onnavy);}
+  .footgrid .brand{margin-bottom:10px;}
+  .footgrid .col h5{color:var(--cream);font-family:'Public Sans',sans-serif;font-weight:600;font-size:14px;margin-bottom:14px;}
+  .footgrid .col a{display:block;color:#9BA6B8;text-decoration:none;font-size:14.5px;margin-bottom:10px;}
+  .footgrid .col a:hover{color:var(--cream);}
+  .footbottom{padding-top:22px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;font-size:13.5px;}
+  @media (max-width:640px){.footgrid{flex-direction:column;}}
+
+  /* ---------- Floating WhatsApp button ---------- */
+  .fab{
+    position:fixed;bottom:22px;right:22px;z-index:60;
+    width:58px;height:58px;border-radius:50%;
+    background:#25D366;display:flex;align-items:center;justify-content:center;
+    box-shadow:0 6px 18px rgba(0,0,0,0.25);
+    text-decoration:none;
+  }
+  .fab svg{width:30px;height:30px;color:#fff;}
+</style>
+</head>
+<body>
+
+<header>
+  <nav class="nav">
+    <div class="nav-left">
+      <a href="#top" class="brand">
+        <svg class="mark" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><circle cx="20" cy="20" r="18" fill="none" stroke="#E29B34" stroke-width="1.4"/><circle cx="27" cy="12" r="2.4" fill="#E29B34"/><path d="M9 28 L18 12.5 L24 21 L28 16 L34 28 Z" fill="#2F5233"/><path d="M4 28 L13.5 15.5 L21 28 Z" fill="#F1E7CF"/><path d="M13.5 15.5 L16 19 L11.3 21.5 Z" fill="#0F1B2D" opacity="0.16"/><path d="M16.5 35 C17 30 21.5 28 21.5 24 C21.5 20.2 16.8 19.3 17 15" fill="none" stroke="#E29B34" stroke-width="3.8" stroke-linecap="round"/><path d="M16.5 35 C17 30 21.5 28 21.5 24 C21.5 20.2 16.8 19.3 17 15" fill="none" stroke="#F1E7CF" stroke-width="0.9" stroke-linecap="round" stroke-dasharray="1.6 2.6"/></svg>
+        Sharma Tour &amp; Travels
+      </a>
+      <div class="langswitch" role="group" aria-label="Choose language">
+        <button type="button" data-lang="en" class="active">EN</button>
+        <button type="button" data-lang="hi">हिं</button>
+        <button type="button" data-lang="pa">ਪੰਜ</button>
+      </div>
+    </div>
+    <button class="navtoggle" id="navToggle" aria-label="Toggle menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18" stroke-linecap="round"/></svg>
+    </button>
+    <div class="navlinks" id="navLinks">
+      <a href="#fleet" data-i18n="nav.fleet">Fleet</a>
+      <a href="#oneway" data-i18n="nav.oneway">Punjab–Delhi</a>
+      <a href="#tours" data-i18n="nav.tours">Tour packages</a>
+      <a href="#about" data-i18n="nav.about">About us</a>
+      <a href="#why" data-i18n="nav.why">Why us</a>
+      <a class="btn btn-primary" href="https://wa.me/916283753933?text=Hi%2C%20I%27d%20like%20to%20ask%20about%20cab%20fares." target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.6.1-.2.3-.7.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.4-.5c.1-.1.2-.3.2-.4.1-.2 0-.3 0-.5-.1-.1-.6-1.5-.8-2-.2-.5-.4-.5-.6-.5h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.1 0 1.2.9 2.4 1 2.6.1.2 1.8 2.8 4.4 3.9.6.3 1.1.4 1.5.5.6.2 1.2.2 1.6.1.5-.1 1.7-.7 1.9-1.3.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.6-.3z"/><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5.1-1.3A10 10 0 1 0 12 2zm0 18.2c-1.6 0-3.1-.4-4.4-1.2l-.3-.2-3.1.8.8-3-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg>
+        <span data-i18n="nav.whatsapp">WhatsApp us</span>
+      </a>
+    </div>
+  </nav>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero" style="padding-top:76px;padding-bottom:60px;">
+    <div class="wrap">
+      <div>
+        <h1><span data-i18n="hero.title1">Punjab to Delhi,</span><br><span data-i18n="hero.title2">and every hill road </span><span class="accent" data-i18n="hero.accent">in between.</span></h1>
+        <p class="lede" data-i18n="hero.lede">Sedans, SUVs and Tempo Travellers for daily one-way trips between Punjab and Delhi, plus tour packages to Himachal, Kashmir, Uttarakhand, Rajasthan and Uttar Pradesh.</p>
+        <div class="ctas">
+          <a class="btn btn-primary" href="https://wa.me/916283753933?text=Hi%2C%20I%27d%20like%20to%20know%20the%20fare%20for%20a%20trip." target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.6.1-.2.3-.7.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.4-.5c.1-.1.2-.3.2-.4.1-.2 0-.3 0-.5-.1-.1-.6-1.5-.8-2-.2-.5-.4-.5-.6-.5h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.1 0 1.2.9 2.4 1 2.6.1.2 1.8 2.8 4.4 3.9.6.3 1.1.4 1.5.5.6.2 1.2.2 1.6.1.5-.1 1.7-.7 1.9-1.3.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.6-.3z"/><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5.1-1.3A10 10 0 1 0 12 2zm0 18.2c-1.6 0-3.1-.4-4.4-1.2l-.3-.2-3.1.8.8-3-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg>
+            <span data-i18n="hero.cta1">Ask fare on WhatsApp</span>
+          </a>
+          <a class="btn btn-ghost-dark" href="#fleet" data-i18n="hero.cta2">See the fleet</a>
+        </div>
+        <p class="fineprint" data-i18n="hero.fineprint">Fares depend on car type, distance and season — message us and we'll quote you directly.</p>
+      </div>
+
+      <div class="routemap" aria-hidden="true">
+        <div class="cities"><span data-i18n="routemap.punjab">Punjab</span><span data-i18n="routemap.delhi">Delhi</span></div>
+        <div class="track">
+          <div class="dot start"></div>
+          <div class="dot end"></div>
+          <div class="car">
+            <svg viewBox="0 0 48 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M4 16l2.8-6.5A3 3 0 0 1 9.6 8h20.8a3 3 0 0 1 2.8 1.9L36 16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M4 16h32v3.6a1.4 1.4 0 0 1-1.4 1.4H5.4A1.4 1.4 0 0 1 4 19.6V16z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+              <circle cx="12" cy="21" r="2" fill="currentColor"/>
+              <circle cx="28" cy="21" r="2" fill="currentColor"/>
+            </svg>
+          </div>
+        </div>
+        <div class="routestats">
+          <div><div class="num">~250 km</div><div class="lbl" data-i18n="routestats.distance.label">one-way distance</div></div>
+          <div><div class="num" data-i18n="routestats.daily.value">Daily</div><div class="lbl" data-i18n="routestats.daily.label">departures both ways</div></div>
+          <div><div class="num">7</div><div class="lbl" data-i18n="routestats.vehicles.label">vehicle types to choose from</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="wrap about-grid">
+      <div>
+        <div class="section-head" style="margin-bottom:22px;">
+          <h2 data-i18n="about.heading">A family-run cab service, not a call centre</h2>
+        </div>
+        <p style="font-size:17px;color:#4B4535;" data-i18n="about.p1">We're a Punjab-based cab and tours operator running the Punjab–Delhi corridor daily, alongside multi-day tours across North India. There's no app, no fixed online pricing and no automated booking desk — every trip is arranged personally, over WhatsApp, with someone who knows the car, the driver and the road.</p>
+        <p style="font-size:17px;color:#4B4535;margin-top:16px;" data-i18n="about.p2">Whether it's an early morning drop to the Delhi airport, a same-day return, or a two-week family holiday to Himachal or Kashmir, we plan the vehicle and the route around your group — not the other way round.</p>
+      </div>
+      <div class="about-facts">
+        <div>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21c4-3.5 7-7 7-11a7 7 0 1 0-14 0c0 4 3 7.5 7 11z" stroke-linejoin="round"/><circle cx="12" cy="10" r="2.4"/></svg>
+          <div><strong data-i18n="about.fact1.title">Based in Punjab</strong><span data-i18n="about.fact1.desc">Serving Ludhiana, Jalandhar, Amritsar, Chandigarh and Patiala</span></div>
+        </div>
+        <div>
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.6.1-.2.3-.7.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.4-.5c.1-.1.2-.3.2-.4.1-.2 0-.3 0-.5-.1-.1-.6-1.5-.8-2-.2-.5-.4-.5-.6-.5h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.1 0 1.2.9 2.4 1 2.6.1.2 1.8 2.8 4.4 3.9.6.3 1.1.4 1.5.5.6.2 1.2.2 1.6.1.5-.1 1.7-.7 1.9-1.3.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.6-.3z"/><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5.1-1.3A10 10 0 1 0 12 2zm0 18.2c-1.6 0-3.1-.4-4.4-1.2l-.3-.2-3.1.8.8-3-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg>
+          <div><strong data-i18n="about.fact2.title">Booked personally</strong><span data-i18n="about.fact2.desc">Every fare is quoted to you directly on WhatsApp — no fixed online prices</span></div>
+        </div>
+        <div>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 17h16M6 17V9a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v8" stroke-linejoin="round"/><circle cx="8.5" cy="17" r="1.6"/><circle cx="15.5" cy="17" r="1.6"/></svg>
+          <div><strong data-i18n="about.fact3.title">Sedans to 16-seaters</strong><span data-i18n="about.fact3.desc">A vehicle sized to your group, from a solo trip to a full family tour</span></div>
+        </div>
+        <div>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M8 12l2.5 2.5L16 9" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <div><strong data-i18n="about.fact4.title">Punjab–Delhi &amp; beyond</strong><span data-i18n="about.fact4.desc">Daily one-way runs, plus tours to Himachal, Kashmir, Uttarakhand, Rajasthan and UP</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FLEET -->
+  <section id="fleet">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 data-i18n="fleet.heading">A car for every group size</h2>
+        <p data-i18n="fleet.sub">From a quick one-way run to a family holiday, pick a sedan for light travel or an SUV, Tempo Traveller or Urbania when the group grows.</p>
+      </div>
+
+      <div class="fleet-group">
+        <h3><span data-i18n="sedans.heading">Sedans</span> <span class="tag" data-i18n="sedans.tag">4-seater, best for 1–3 passengers</span></h3>
+        <div class="cargrid">
+          <div class="carcard has-photo">
+            <img class="photo" src="assets/honda-amaze.png" alt="Honda Amaze sedan on a city road">
+            <div class="carcard-body">
+              <h4>Honda Amaze</h4>
+              <div class="seats" data-i18n="car.seats.4std">4 seats · AC · luggage for 2–3 bags</div>
+              <p class="desc" data-i18n="car.amaze.desc">Comfortable and fuel-efficient — a popular pick for city runs and short outstation trips.</p>
+            </div>
+          </div>
+          <div class="carcard has-photo">
+            <img class="photo" src="assets/swift-dzire.png" alt="Maruti Swift Dzire sedan parked in a neighbourhood">
+            <div class="carcard-body">
+              <h4>Maruti Swift Dzire</h4>
+              <div class="seats" data-i18n="car.seats.4std">4 seats · AC · luggage for 2–3 bags</div>
+              <p class="desc" data-i18n="car.dzire.desc">One of the most requested sedans on the Punjab–Delhi route for its smooth ride and mileage.</p>
+            </div>
+          </div>
+          <div class="carcard has-photo">
+            <img class="photo" src="assets/toyota-etios.png" alt="Toyota Etios sedan on a highway">
+            <div class="carcard-body">
+              <h4>Toyota Etios</h4>
+              <div class="seats" data-i18n="car.etios.seats">4 seats · AC · roomy boot space</div>
+              <p class="desc" data-i18n="car.etios.desc">A sturdy, spacious sedan that holds up well on longer highway stretches.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="fleet-group">
+        <h3><span data-i18n="suv.heading">SUVs &amp; group vehicles</span> <span class="tag" data-i18n="suv.tag">7 to 16 seats, for families and groups</span></h3>
+        <div class="cargrid">
+          <div class="carcard has-photo">
+            <img class="photo" src="assets/innova-crysta.png" alt="Toyota Innova Crysta SUV on a mountain road">
+            <div class="carcard-body">
+              <h4>Toyota Innova Crysta</h4>
+              <div class="seats" data-i18n="car.innova.seats">7 seats · AC · top pick for hill routes</div>
+              <p class="desc" data-i18n="car.innova.desc">The go-to SUV for Himachal, Kashmir and Uttarakhand tours — stable and comfortable on winding roads.</p>
+            </div>
+          </div>
+          <div class="carcard has-photo">
+            <img class="photo" src="assets/mahindra-marazzo.png" alt="Mahindra Marazzo SUV parked outdoors">
+            <div class="carcard-body">
+              <h4>Mahindra Marazzo</h4>
+              <div class="seats" data-i18n="car.marazzo.seats">7 seats · AC · wide cabin space</div>
+              <p class="desc" data-i18n="car.marazzo.desc">Generous legroom for families travelling together on longer tours.</p>
+            </div>
+          </div>
+          <div class="carcard has-photo">
+            <img class="photo" src="assets/maruti-ertiga.png" alt="Maruti Ertiga SUV on a countryside road">
+            <div class="carcard-body">
+              <h4>Maruti Ertiga</h4>
+              <div class="seats" data-i18n="car.ertiga.seats">7 seats · AC · easy on fuel for its size</div>
+              <p class="desc" data-i18n="car.ertiga.desc">A practical, budget-friendly SUV option for small family groups.</p>
+            </div>
+          </div>
+          <div class="carcard has-photo">
+            <img class="photo" src="assets/tempo-traveller.png" alt="Tempo Traveller van">
+            <div class="carcard-body">
+              <h4 data-i18n="car.tt12.name">Tempo Traveller — 12 seater</h4>
+              <div class="seats" data-i18n="car.tt12.seats">12 seats · AC · pushback seating available</div>
+              <p class="desc" data-i18n="car.tt12.desc">Built for group tours and family functions where everyone travels together.</p>
+            </div>
+          </div>
+          <div class="carcard has-photo">
+            <img class="photo" src="assets/tempo-traveller.png" alt="Tempo Traveller van">
+            <div class="carcard-body">
+              <h4 data-i18n="car.tt16.name">Tempo Traveller — 16 seater</h4>
+              <div class="seats" data-i18n="car.tt16.seats">16 seats · AC · more room for luggage</div>
+              <p class="desc" data-i18n="car.tt16.desc">For larger groups — school trips, weddings, or a big family holiday.</p>
+            </div>
+          </div>
+          <div class="carcard has-photo">
+            <img class="photo" src="assets/force-urbania.png" alt="Force Urbania high-roof van">
+            <div class="carcard-body">
+              <h4>Force Urbania — 12 &amp; 16 seater</h4>
+              <div class="seats" data-i18n="car.urbania.seats">12 or 16 seats · AC · premium high-roof cabin</div>
+              <p class="desc" data-i18n="car.urbania.desc">Our most premium group vehicle — extra headroom and a smoother ride for longer tours.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ONE WAY -->
+  <section id="oneway" class="oneway">
+    <div class="wrap oneway-grid">
+      <div>
+        <div class="section-head on-dark">
+          <h2 style="color:var(--cream);" data-i18n="oneway.heading">Punjab ⇄ Delhi, every day</h2>
+          <p data-i18n="oneway.sub">Our most-booked route. One-way or return, day or night, in a sedan or a full group vehicle.</p>
+        </div>
+        <div class="citylist">
+          <span data-i18n="city.ludhiana">Ludhiana</span><span data-i18n="city.jalandhar">Jalandhar</span><span data-i18n="city.amritsar">Amritsar</span><span data-i18n="city.chandigarh">Chandigarh</span><span data-i18n="city.patiala">Patiala</span><span data-i18n="oneway.arrow">→ Delhi &amp; back</span>
+        </div>
+      </div>
+      <div>
+        <h3 data-i18n="oneway.how">How it works</h3>
+        <ul>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3" stroke-linecap="round"/></svg><span data-i18n="oneway.step1">Tell us your pickup point in Punjab and your drop point in Delhi, or the reverse.</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3" stroke-linecap="round"/></svg><span data-i18n="oneway.step2">Choose a sedan for a light load or an SUV/Tempo Traveller for a bigger group.</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3" stroke-linecap="round"/></svg><span data-i18n="oneway.step3">We confirm the fare and driver details over WhatsApp before you travel.</span></li>
+        </ul>
+        <div class="ctas" style="margin-top:26px;">
+          <a class="btn btn-primary" href="https://wa.me/916283753933?text=Hi%2C%20I%20need%20a%20one-way%20cab%20between%20Punjab%20and%20Delhi." target="_blank" rel="noopener"><span data-i18n="oneway.cta">Book this route</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TOURS -->
+  <section id="tours">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 data-i18n="tours.heading">Tour packages beyond Punjab</h2>
+        <p data-i18n="tours.sub">Multi-day itineraries with a driver who knows the roads, in an SUV or Tempo Traveller sized for your group.</p>
+      </div>
+      <div class="tourgrid">
+
+        <div class="tourcard t-himachal">
+          <div class="art">
+            <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Landscape_of_Shimla_,_Himachal_Pradesh.jpg?width=800" alt="Hillside view of Shimla, Himachal Pradesh" loading="lazy">
+          </div>
+          <div class="body">
+            <h4 data-i18n="tour.himachal.name">Himachal Pradesh</h4>
+            <div class="places" data-i18n="tour.himachal.places">Shimla · Manali · Dharamshala</div>
+            <p class="desc" data-i18n="tour.himachal.desc">Hill stations, pine forests and mountain passes — best covered in an Innova Crysta or Tempo Traveller.</p>
+            <a class="cta" href="https://wa.me/916283753933?text=Hi%2C%20I%27d%20like%20a%20Himachal%20Pradesh%20tour%20package." target="_blank" rel="noopener"><span data-i18n="tours.cta">Enquire on WhatsApp</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          </div>
+        </div>
+
+        <div class="tourcard t-kashmir">
+          <div class="art">
+            <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Char_Chinar_at_Dal_Lake,_Kashmir.JPG?width=800" alt="Char Chinar island reflected in Dal Lake, Srinagar" loading="lazy">
+          </div>
+          <div class="body">
+            <h4 data-i18n="tour.kashmir.name">Kashmir</h4>
+            <div class="places" data-i18n="tour.kashmir.places">Srinagar · Gulmarg · Pahalgam</div>
+            <p class="desc" data-i18n="tour.kashmir.desc">Valleys, houseboats and mountain drives — an SUV handles the terrain comfortably.</p>
+            <a class="cta" href="https://wa.me/916283753933?text=Hi%2C%20I%27d%20like%20a%20Kashmir%20tour%20package." target="_blank" rel="noopener"><span data-i18n="tours.cta">Enquire on WhatsApp</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          </div>
+        </div>
+
+        <div class="tourcard t-uttarakhand">
+          <div class="art">
+            <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Rishikesh-Lakshman_Jhula_by_Kaustubh_Nayyar.jpg?width=800" alt="Lakshman Jhula suspension bridge over the Ganges at Rishikesh" loading="lazy">
+          </div>
+          <div class="body">
+            <h4 data-i18n="tour.uttarakhand.name">Uttarakhand</h4>
+            <div class="places" data-i18n="tour.uttarakhand.places">Rishikesh · Nainital · Mussoorie</div>
+            <p class="desc" data-i18n="tour.uttarakhand.desc">Riverside towns and lake views, reachable by sedan or SUV depending on your group size.</p>
+            <a class="cta" href="https://wa.me/916283753933?text=Hi%2C%20I%27d%20like%20an%20Uttarakhand%20tour%20package." target="_blank" rel="noopener"><span data-i18n="tours.cta">Enquire on WhatsApp</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          </div>
+        </div>
+
+        <div class="tourcard t-rajasthan">
+          <div class="art">
+            <img src="https://commons.wikimedia.org/wiki/Special:FilePath/20191218,_Hawa_Mahal_(The_Palace_of_Winds)_in_Jaipur,_1128_9119.jpg?width=800" alt="Hawa Mahal, the Palace of Winds, in Jaipur" loading="lazy">
+          </div>
+          <div class="body">
+            <h4 data-i18n="tour.rajasthan.name">Rajasthan</h4>
+            <div class="places" data-i18n="tour.rajasthan.places">Jaipur · Udaipur · Jodhpur</div>
+            <p class="desc" data-i18n="tour.rajasthan.desc">Forts, palaces and desert roads across longer distances — comfortable in an Innova or sedan.</p>
+            <a class="cta" href="https://wa.me/916283753933?text=Hi%2C%20I%27d%20like%20a%20Rajasthan%20tour%20package." target="_blank" rel="noopener"><span data-i18n="tours.cta">Enquire on WhatsApp</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          </div>
+        </div>
+
+        <div class="tourcard t-up">
+          <div class="art">
+            <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Taj_Mahal,_Agra,_India_edit2.jpg?width=800" alt="The Taj Mahal in Agra" loading="lazy">
+          </div>
+          <div class="body">
+            <h4 data-i18n="tour.up.name">Uttar Pradesh</h4>
+            <div class="places" data-i18n="tour.up.places">Agra · Varanasi · Lucknow</div>
+            <p class="desc" data-i18n="tour.up.desc">Heritage monuments and riverside ghats — a relaxed sedan trip or part of a longer circuit.</p>
+            <a class="cta" href="https://wa.me/916283753933?text=Hi%2C%20I%27d%20like%20a%20Uttar%20Pradesh%20tour%20package." target="_blank" rel="noopener"><span data-i18n="tours.cta">Enquire on WhatsApp</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          </div>
+        </div>
+
+      </div>
+      <p style="margin-top:22px;font-size:12.5px;color:#9A927A;">Destination photos via Wikimedia Commons (CC BY-SA): Shimla — Navneetsharmaiit · Dal Lake — contributor photo · Lakshman Jhula — Kaustubh Nayyar · Hawa Mahal — Jakub Hałun · Taj Mahal — Yann Forget.</p>
+    </div>
+  </section>
+
+  <!-- WHY US -->
+  <section id="why" style="padding-top:0;">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 data-i18n="why.heading">Why people book with us</h2>
+      </div>
+      <div class="whyus">
+        <div>
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 17h16M6 17V9a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v8" stroke-linejoin="round"/><circle cx="8.5" cy="17" r="1.6"/><circle cx="15.5" cy="17" r="1.6"/></svg>
+          <h4 data-i18n="why1.title">Well-kept vehicles</h4>
+          <p data-i18n="why1.desc">Every car and van in the fleet is serviced regularly and cleaned before each trip.</p>
+        </div>
+        <div>
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2l2.5 5 5.5.8-4 3.9.9 5.5-4.9-2.6-4.9 2.6.9-5.5-4-3.9 5.5-.8L12 2z" stroke-linejoin="round"/></svg>
+          <h4 data-i18n="why2.title">Drivers who know the route</h4>
+          <p data-i18n="why2.desc">Regular runs on the Punjab–Delhi highway and the mountain routes, in every season.</p>
+        </div>
+        <div>
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21c4-3.5 7-7 7-11a7 7 0 1 0-14 0c0 4 3 7.5 7 11z" stroke-linejoin="round"/><circle cx="12" cy="10" r="2.4"/></svg>
+          <h4 data-i18n="why3.title">Fares quoted directly to you</h4>
+          <p data-i18n="why3.desc">No fixed online prices — message us your route and dates, and we'll quote a fair fare on WhatsApp.</p>
+        </div>
+        <div>
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 7v5l3.5 2" stroke-linecap="round"/><circle cx="12" cy="12" r="9"/></svg>
+          <h4 data-i18n="why4.title">Available every day</h4>
+          <p data-i18n="why4.desc">Early morning pickups, overnight drives and last-minute bookings are all fine — just message us.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BAND -->
+  <section class="ctaband">
+    <div class="wrap">
+      <h2 data-i18n="ctaband.heading">Tell us where you're headed</h2>
+      <p data-i18n="ctaband.sub">Share your pickup point, drop point and travel date on WhatsApp — we'll get back with the car options and fare.</p>
+      <div class="ctas">
+        <a class="btn btn-primary" href="https://wa.me/916283753933?text=Hi%2C%20I%27d%20like%20to%20book%20a%20cab." target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.6.1-.2.3-.7.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.4-.5c.1-.1.2-.3.2-.4.1-.2 0-.3 0-.5-.1-.1-.6-1.5-.8-2-.2-.5-.4-.5-.6-.5h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.1 0 1.2.9 2.4 1 2.6.1.2 1.8 2.8 4.4 3.9.6.3 1.1.4 1.5.5.6.2 1.2.2 1.6.1.5-.1 1.7-.7 1.9-1.3.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.6-.3z"/><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5.1-1.3A10 10 0 1 0 12 2zm0 18.2c-1.6 0-3.1-.4-4.4-1.2l-.3-.2-3.1.8.8-3-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg>
+          <span data-i18n="ctaband.cta1">Message +91 62837 53933</span>
+        </a>
+        <a class="btn btn-ghost-light" href="tel:+916283753933" data-i18n="ctaband.cta2">Or call us</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="footgrid">
+      <div>
+        <a href="#top" class="brand" style="margin-bottom:12px;">
+          <svg class="mark" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><circle cx="20" cy="20" r="18" fill="none" stroke="#E29B34" stroke-width="1.4"/><circle cx="27" cy="12" r="2.4" fill="#E29B34"/><path d="M9 28 L18 12.5 L24 21 L28 16 L34 28 Z" fill="#2F5233"/><path d="M4 28 L13.5 15.5 L21 28 Z" fill="#F1E7CF"/><path d="M13.5 15.5 L16 19 L11.3 21.5 Z" fill="#0F1B2D" opacity="0.16"/><path d="M16.5 35 C17 30 21.5 28 21.5 24 C21.5 20.2 16.8 19.3 17 15" fill="none" stroke="#E29B34" stroke-width="3.8" stroke-linecap="round"/><path d="M16.5 35 C17 30 21.5 28 21.5 24 C21.5 20.2 16.8 19.3 17 15" fill="none" stroke="#F1E7CF" stroke-width="0.9" stroke-linecap="round" stroke-dasharray="1.6 2.6"/></svg>
+          Sharma Tour &amp; Travels
+        </a>
+        <p style="max-width:32ch;font-size:14.5px;" data-i18n="footer.tagline">Sedans, SUVs and Tempo Travellers for Punjab, Delhi and tours across North India.</p>
+      </div>
+      <div class="col">
+        <h5 data-i18n="footer.explore">Explore</h5>
+        <a href="#fleet" data-i18n="footer.link.fleet">Our fleet</a>
+        <a href="#oneway" data-i18n="footer.link.oneway">Punjab–Delhi service</a>
+        <a href="#tours" data-i18n="footer.link.tours">Tour packages</a>
+        <a href="#about" data-i18n="footer.link.about">About us</a>
+      </div>
+      <div class="col">
+        <h5 data-i18n="footer.contact">Get in touch</h5>
+        <a href="https://wa.me/916283753933" target="_blank" rel="noopener" data-i18n="footer.whatsapp">WhatsApp: +91 62837 53933</a>
+        <a href="tel:+916283753933" data-i18n="footer.call">Call: +91 62837 53933</a>
+      </div>
+    </div>
+    <div class="footbottom">
+      <span data-i18n="footer.copyright">© 2026 Sharma Tour &amp; Travels. All fares confirmed individually on WhatsApp.</span>
+      <span data-i18n="footer.location">Based in Punjab, serving Delhi and North India.</span>
+    </div>
+  </div>
+</footer>
+
+<a class="fab" href="https://wa.me/916283753933?text=Hi%2C%20I%27d%20like%20to%20know%20the%20fare%20for%20a%20trip." target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.6.1-.2.3-.7.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.4-.5c.1-.1.2-.3.2-.4.1-.2 0-.3 0-.5-.1-.1-.6-1.5-.8-2-.2-.5-.4-.5-.6-.5h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.1 0 1.2.9 2.4 1 2.6.1.2 1.8 2.8 4.4 3.9.6.3 1.1.4 1.5.5.6.2 1.2.2 1.6.1.5-.1 1.7-.7 1.9-1.3.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.6-.3z"/><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5.1-1.3A10 10 0 1 0 12 2zm0 18.2c-1.6 0-3.1-.4-4.4-1.2l-.3-.2-3.1.8.8-3-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg>
+</a>
+
+<script>
+  const toggle = document.getElementById('navToggle');
+  const links = document.getElementById('navLinks');
+  toggle.addEventListener('click', () => links.classList.toggle('open'));
+  links.querySelectorAll('a').forEach(a => a.addEventListener('click', () => links.classList.remove('open')));
+
+  const translations = {
+    hi: {
+      "nav.fleet":"गाड़ियां","nav.oneway":"पंजाब–दिल्ली","nav.tours":"टूर पैकेज","nav.about":"हमारे बारे में","nav.why":"हमें क्यों चुनें","nav.whatsapp":"व्हाट्सएप करें",
+      "hero.title1":"पंजाब से दिल्ली,","hero.title2":"और हर पहाड़ी रास्ता ","hero.accent":"बीच में।",
+      "hero.lede":"पंजाब और दिल्ली के बीच रोज़ाना वन-वे यात्रा के लिए सेडान, एसयूवी और टेम्पो ट्रैवलर, साथ ही हिमाचल, कश्मीर, उत्तराखंड, राजस्थान और उत्तर प्रदेश के लिए टूर पैकेज।",
+      "hero.cta1":"व्हाट्सएप पर किराया पूछें","hero.cta2":"गाड़ियां देखें",
+      "hero.fineprint":"किराया गाड़ी के प्रकार, दूरी और मौसम पर निर्भर करता है — हमें मैसेज करें, हम आपको सीधे बता देंगे।",
+      "routemap.punjab":"पंजाब","routemap.delhi":"दिल्ली",
+      "routestats.distance.label":"वन-वे दूरी","routestats.daily.value":"रोज़ाना","routestats.daily.label":"दोनों तरफ रवानगी","routestats.vehicles.label":"गाड़ियों के विकल्प",
+      "about.heading":"एक पारिवारिक कैब सेवा, कॉल सेंटर नहीं",
+      "about.p1":"हम पंजाब स्थित एक कैब और टूर ऑपरेटर हैं जो रोज़ाना पंजाब–दिल्ली मार्ग चलाते हैं, साथ ही उत्तर भारत में कई दिनों के टूर भी करवाते हैं। न कोई ऐप, न कोई तय ऑनलाइन कीमत, न कोई ऑटोमेटेड बुकिंग डेस्क — हर यात्रा व्हाट्सएप पर सीधे उस व्यक्ति से तय होती है जो गाड़ी, ड्राइवर और रास्ते को अच्छी तरह जानता है।",
+      "about.p2":"चाहे सुबह जल्दी दिल्ली एयरपोर्ट छोड़ना हो, उसी दिन वापसी हो, या हिमाचल या कश्मीर की दो हफ्ते की पारिवारिक छुट्टी हो — हम गाड़ी और रास्ता आपके समूह के हिसाब से तय करते हैं, न कि इसका उल्टा।",
+      "about.fact1.title":"पंजाब में स्थित","about.fact1.desc":"लुधियाना, जालंधर, अमृतसर, चंडीगढ़ और पटियाला की सेवा",
+      "about.fact2.title":"व्यक्तिगत रूप से बुकिंग","about.fact2.desc":"हर किराया सीधे व्हाट्सएप पर बताया जाता है — कोई तय ऑनलाइन कीमत नहीं",
+      "about.fact3.title":"सेडान से 16-सीटर तक","about.fact3.desc":"अकेली यात्रा से लेकर पूरे परिवार के टूर तक, आपके समूह के हिसाब से गाड़ी",
+      "about.fact4.title":"पंजाब–दिल्ली और आगे","about.fact4.desc":"रोज़ाना वन-वे सेवा, साथ ही हिमाचल, कश्मीर, उत्तराखंड, राजस्थान और उत्तर प्रदेश के टूर",
+      "fleet.heading":"हर समूह के आकार के लिए गाड़ी",
+      "fleet.sub":"एक छोटी वन-वे यात्रा से लेकर पारिवारिक छुट्टी तक — हल्की यात्रा के लिए सेडान चुनें, या समूह बड़ा होने पर एसयूवी, टेम्पो ट्रैवलर या उर्बानिया।",
+      "sedans.heading":"सेडान","sedans.tag":"4-सीटर, 1–3 यात्रियों के लिए सबसे अच्छी",
+      "suv.heading":"एसयूवी और समूह वाहन","suv.tag":"7 से 16 सीट, परिवारों और समूहों के लिए",
+      "car.seats.4std":"4 सीट · एसी · 2–3 बैग के लिए जगह",
+      "car.amaze.desc":"आरामदायक और ईंधन-कुशल — शहर की यात्रा और छोटी आउटस्टेशन ट्रिप के लिए पसंदीदा।",
+      "car.dzire.desc":"पंजाब–दिल्ली रूट पर अपनी आरामदायक सवारी और माइलेज के लिए सबसे ज़्यादा मांगी जाने वाली सेडान में से एक।",
+      "car.etios.seats":"4 सीट · एसी · बड़ी डिक्की",
+      "car.etios.desc":"एक मज़बूत, विशाल सेडान जो लंबे हाईवे सफर में भी अच्छी तरह चलती है।",
+      "car.innova.seats":"7 सीट · एसी · पहाड़ी रास्तों के लिए पहली पसंद",
+      "car.innova.desc":"हिमाचल, कश्मीर और उत्तराखंड टूर के लिए पसंदीदा एसयूवी — घुमावदार रास्तों पर स्थिर और आरामदायक।",
+      "car.marazzo.seats":"7 सीट · एसी · चौड़ी केबिन जगह",
+      "car.marazzo.desc":"लंबे टूर पर साथ यात्रा करने वाले परिवारों के लिए भरपूर लेगरूम।",
+      "car.ertiga.seats":"7 सीट · एसी · अपने आकार के हिसाब से किफायती",
+      "car.ertiga.desc":"छोटे पारिवारिक समूहों के लिए एक व्यावहारिक, बजट-अनुकूल एसयूवी विकल्प।",
+      "car.tt12.name":"टेम्पो ट्रैवलर — 12 सीटर","car.tt12.seats":"12 सीट · एसी · पुशबैक सीटिंग उपलब्ध",
+      "car.tt12.desc":"समूह टूर और पारिवारिक समारोहों के लिए बनाई गई, जहां सब एक साथ यात्रा करते हैं।",
+      "car.tt16.name":"टेम्पो ट्रैवलर — 16 सीटर","car.tt16.seats":"16 सीट · एसी · सामान के लिए ज़्यादा जगह",
+      "car.tt16.desc":"बड़े समूहों के लिए — स्कूल ट्रिप, शादियां, या बड़ी पारिवारिक छुट्टी।",
+      "car.urbania.seats":"12 या 16 सीट · एसी · प्रीमियम हाई-रूफ केबिन",
+      "car.urbania.desc":"हमारा सबसे प्रीमियम समूह वाहन — ज़्यादा हेडरूम और लंबे टूर के लिए बेहतर सवारी।",
+      "oneway.heading":"पंजाब ⇄ दिल्ली, हर दिन",
+      "oneway.sub":"हमारा सबसे ज़्यादा बुक होने वाला रूट। वन-वे या वापसी, दिन हो या रात, सेडान में या पूरे समूह वाहन में।",
+      "city.ludhiana":"लुधियाना","city.jalandhar":"जालंधर","city.amritsar":"अमृतसर","city.chandigarh":"चंडीगढ़","city.patiala":"पटियाला","oneway.arrow":"→ दिल्ली और वापसी",
+      "oneway.how":"यह कैसे काम करता है",
+      "oneway.step1":"हमें पंजाब में अपना पिकअप पॉइंट और दिल्ली में ड्रॉप पॉइंट बताएं, या इसके उलट।",
+      "oneway.step2":"हल्के सामान के लिए सेडान चुनें या बड़े समूह के लिए एसयूवी/टेम्पो ट्रैवलर।",
+      "oneway.step3":"यात्रा से पहले हम व्हाट्सएप पर किराया और ड्राइवर की जानकारी कन्फर्म करते हैं।",
+      "oneway.cta":"यह रूट बुक करें",
+      "tours.heading":"पंजाब के बाहर टूर पैकेज",
+      "tours.sub":"ऐसे ड्राइवर के साथ कई दिनों की यात्रा योजना जो रास्तों को अच्छी तरह जानता है, आपके समूह के हिसाब से एसयूवी या टेम्पो ट्रैवलर में।",
+      "tour.himachal.name":"हिमाचल प्रदेश","tour.himachal.places":"शिमला · मनाली · धर्मशाला",
+      "tour.himachal.desc":"पहाड़ी स्टेशन, चीड़ के जंगल और पहाड़ी दर्रे — इन्नोवा क्रिस्टा या टेम्पो ट्रैवलर में सबसे बेहतर।",
+      "tour.kashmir.name":"कश्मीर","tour.kashmir.places":"श्रीनगर · गुलमर्ग · पहलगाम",
+      "tour.kashmir.desc":"वादियां, हाउसबोट और पहाड़ी ड्राइव — एसयूवी इस इलाके को आसानी से संभालती है।",
+      "tour.uttarakhand.name":"उत्तराखंड","tour.uttarakhand.places":"ऋषिकेश · नैनीताल · मसूरी",
+      "tour.uttarakhand.desc":"नदी किनारे के शहर और झील के नज़ारे, आपके समूह के आकार के हिसाब से सेडान या एसयूवी से पहुंचा जा सकता है।",
+      "tour.rajasthan.name":"राजस्थान","tour.rajasthan.places":"जयपुर · उदयपुर · जोधपुर",
+      "tour.rajasthan.desc":"किले, महल और लंबी दूरी के रेगिस्तानी रास्ते — इन्नोवा या सेडान में आरामदायक।",
+      "tour.up.name":"उत्तर प्रदेश","tour.up.places":"आगरा · वाराणसी · लखनऊ",
+      "tour.up.desc":"ऐतिहासिक स्मारक और नदी किनारे के घाट — एक आरामदायक सेडान यात्रा या लंबे सर्किट का हिस्सा।",
+      "tours.cta":"व्हाट्सएप पर पूछें",
+      "why.heading":"लोग हमारे साथ बुकिंग क्यों करते हैं",
+      "why1.title":"अच्छी तरह रखी गई गाड़ियां","why1.desc":"फ्लीट की हर गाड़ी और वैन की नियमित सर्विस होती है और हर यात्रा से पहले सफाई की जाती है।",
+      "why2.title":"रास्ता जानने वाले ड्राइवर","why2.desc":"पंजाब–दिल्ली हाईवे और पहाड़ी रास्तों पर हर मौसम में नियमित यात्रा।",
+      "why3.title":"किराया सीधे आपको बताया जाता है","why3.desc":"कोई तय ऑनलाइन कीमत नहीं — हमें अपना रूट और तारीखें बताएं, हम व्हाट्सएप पर उचित किराया बताएंगे।",
+      "why4.title":"हर दिन उपलब्ध","why4.desc":"सुबह जल्दी पिकअप, रातभर की ड्राइव और आखिरी समय की बुकिंग — सब ठीक है, बस हमें मैसेज करें।",
+      "ctaband.heading":"हमें बताएं आप कहां जा रहे हैं",
+      "ctaband.sub":"व्हाट्सएप पर अपना पिकअप पॉइंट, ड्रॉप पॉइंट और यात्रा की तारीख बताएं — हम गाड़ी के विकल्प और किराए के साथ जवाब देंगे।",
+      "ctaband.cta1":"मैसेज करें +91 62837 53933","ctaband.cta2":"या हमें कॉल करें",
+      "footer.tagline":"पंजाब, दिल्ली और उत्तर भारत में टूर के लिए सेडान, एसयूवी और टेम्पो ट्रैवलर।",
+      "footer.explore":"जानकारी","footer.link.fleet":"हमारी गाड़ियां","footer.link.oneway":"पंजाब–दिल्ली सेवा","footer.link.tours":"टूर पैकेज","footer.link.about":"हमारे बारे में",
+      "footer.contact":"संपर्क करें","footer.whatsapp":"व्हाट्सएप: +91 62837 53933","footer.call":"कॉल: +91 62837 53933",
+      "footer.copyright":"© 2026 शर्मा टूर एंड ट्रैवल्स। सभी किराए व्हाट्सएप पर अलग से तय किए जाते हैं।",
+      "footer.location":"पंजाब में स्थित, दिल्ली और उत्तर भारत की सेवा।"
+    },
+    pa: {
+      "nav.fleet":"ਗੱਡੀਆਂ","nav.oneway":"ਪੰਜਾਬ–ਦਿੱਲੀ","nav.tours":"ਟੂਰ ਪੈਕੇਜ","nav.about":"ਸਾਡੇ ਬਾਰੇ","nav.why":"ਸਾਨੂੰ ਕਿਉਂ ਚੁਣੋ","nav.whatsapp":"ਵਟਸਐਪ ਕਰੋ",
+      "hero.title1":"ਪੰਜਾਬ ਤੋਂ ਦਿੱਲੀ,","hero.title2":"ਅਤੇ ਹਰ ਪਹਾੜੀ ਰਾਹ ","hero.accent":"ਵਿਚਕਾਰ।",
+      "hero.lede":"ਪੰਜਾਬ ਅਤੇ ਦਿੱਲੀ ਵਿਚਕਾਰ ਰੋਜ਼ਾਨਾ ਵਨ-ਵੇ ਸਫ਼ਰ ਲਈ ਸੇਡਾਨ, ਐਸਯੂਵੀ ਅਤੇ ਟੈਂਪੋ ਟਰੈਵਲਰ, ਨਾਲ ਹੀ ਹਿਮਾਚਲ, ਕਸ਼ਮੀਰ, ਉਤਰਾਖੰਡ, ਰਾਜਸਥਾਨ ਅਤੇ ਉੱਤਰ ਪ੍ਰਦੇਸ਼ ਲਈ ਟੂਰ ਪੈਕੇਜ।",
+      "hero.cta1":"ਵਟਸਐਪ ਤੇ ਕਿਰਾਇਆ ਪੁੱਛੋ","hero.cta2":"ਗੱਡੀਆਂ ਵੇਖੋ",
+      "hero.fineprint":"ਕਿਰਾਇਆ ਗੱਡੀ ਦੀ ਕਿਸਮ, ਦੂਰੀ ਅਤੇ ਮੌਸਮ ਤੇ ਨਿਰਭਰ ਕਰਦਾ ਹੈ — ਸਾਨੂੰ ਮੈਸੇਜ ਕਰੋ, ਅਸੀਂ ਤੁਹਾਨੂੰ ਸਿੱਧਾ ਦੱਸ ਦੇਵਾਂਗੇ।",
+      "routemap.punjab":"ਪੰਜਾਬ","routemap.delhi":"ਦਿੱਲੀ",
+      "routestats.distance.label":"ਵਨ-ਵੇ ਦੂਰੀ","routestats.daily.value":"ਰੋਜ਼ਾਨਾ","routestats.daily.label":"ਦੋਵੇਂ ਪਾਸੇ ਰਵਾਨਗੀ","routestats.vehicles.label":"ਗੱਡੀਆਂ ਦੇ ਬਦਲ",
+      "about.heading":"ਇੱਕ ਪਰਿਵਾਰਕ ਕੈਬ ਸੇਵਾ, ਕਾਲ ਸੈਂਟਰ ਨਹੀਂ",
+      "about.p1":"ਅਸੀਂ ਪੰਜਾਬ ਅਧਾਰਿਤ ਇੱਕ ਕੈਬ ਅਤੇ ਟੂਰ ਆਪਰੇਟਰ ਹਾਂ ਜੋ ਰੋਜ਼ਾਨਾ ਪੰਜਾਬ–ਦਿੱਲੀ ਰੂਟ ਚਲਾਉਂਦੇ ਹਾਂ, ਨਾਲ ਹੀ ਉੱਤਰ ਭਾਰਤ ਵਿੱਚ ਕਈ ਦਿਨਾਂ ਦੇ ਟੂਰ ਵੀ ਕਰਵਾਉਂਦੇ ਹਾਂ। ਨਾ ਕੋਈ ਐਪ, ਨਾ ਕੋਈ ਤੈਅ ਆਨਲਾਈਨ ਕੀਮਤ, ਨਾ ਕੋਈ ਆਟੋਮੇਟਿਡ ਬੁਕਿੰਗ ਡੈਸਕ — ਹਰ ਸਫ਼ਰ ਵਟਸਐਪ ਤੇ ਸਿੱਧਾ ਉਸ ਵਿਅਕਤੀ ਨਾਲ ਤੈਅ ਹੁੰਦਾ ਹੈ ਜੋ ਗੱਡੀ, ਡਰਾਈਵਰ ਤੇ ਰਾਹ ਨੂੰ ਚੰਗੀ ਤਰ੍ਹਾਂ ਜਾਣਦਾ ਹੈ।",
+      "about.p2":"ਭਾਵੇਂ ਸਵੇਰੇ-ਸਵੇਰੇ ਦਿੱਲੀ ਏਅਰਪੋਰਟ ਛੱਡਣਾ ਹੋਵੇ, ਉਸੇ ਦਿਨ ਵਾਪਸੀ ਹੋਵੇ, ਜਾਂ ਹਿਮਾਚਲ ਜਾਂ ਕਸ਼ਮੀਰ ਦੀ ਦੋ ਹਫ਼ਤਿਆਂ ਦੀ ਪਰਿਵਾਰਕ ਛੁੱਟੀ ਹੋਵੇ, ਅਸੀਂ ਗੱਡੀ ਅਤੇ ਰੂਟ ਤੁਹਾਡੇ ਗਰੁੱਪ ਮੁਤਾਬਕ ਤੈਅ ਕਰਦੇ ਹਾਂ, ਨਾ ਕਿ ਇਸਦੇ ਉਲਟ।",
+      "about.fact1.title":"ਪੰਜਾਬ ਵਿੱਚ ਸਥਿਤ","about.fact1.desc":"ਲੁਧਿਆਣਾ, ਜਲੰਧਰ, ਅੰਮ੍ਰਿਤਸਰ, ਚੰਡੀਗੜ੍ਹ ਅਤੇ ਪਟਿਆਲਾ ਦੀ ਸੇਵਾ",
+      "about.fact2.title":"ਨਿੱਜੀ ਤੌਰ ਤੇ ਬੁਕਿੰਗ","about.fact2.desc":"ਹਰ ਕਿਰਾਇਆ ਸਿੱਧਾ ਵਟਸਐਪ ਤੇ ਦੱਸਿਆ ਜਾਂਦਾ ਹੈ — ਕੋਈ ਤੈਅ ਆਨਲਾਈਨ ਕੀਮਤ ਨਹੀਂ",
+      "about.fact3.title":"ਸੇਡਾਨ ਤੋਂ 16-ਸੀਟਰ ਤੱਕ","about.fact3.desc":"ਇਕੱਲੇ ਸਫ਼ਰ ਤੋਂ ਲੈ ਕੇ ਪੂਰੇ ਪਰਿਵਾਰਕ ਟੂਰ ਤੱਕ, ਤੁਹਾਡੇ ਗਰੁੱਪ ਮੁਤਾਬਕ ਗੱਡੀ",
+      "about.fact4.title":"ਪੰਜਾਬ–ਦਿੱਲੀ ਅਤੇ ਅੱਗੇ","about.fact4.desc":"ਰੋਜ਼ਾਨਾ ਵਨ-ਵੇ ਸੇਵਾ, ਨਾਲ ਹੀ ਹਿਮਾਚਲ, ਕਸ਼ਮੀਰ, ਉਤਰਾਖੰਡ, ਰਾਜਸਥਾਨ ਅਤੇ ਉੱਤਰ ਪ੍ਰਦੇਸ਼ ਦੇ ਟੂਰ",
+      "fleet.heading":"ਹਰ ਗਰੁੱਪ ਦੇ ਆਕਾਰ ਲਈ ਗੱਡੀ",
+      "fleet.sub":"ਇੱਕ ਛੋਟੇ ਵਨ-ਵੇ ਸਫ਼ਰ ਤੋਂ ਲੈ ਕੇ ਪਰਿਵਾਰਕ ਛੁੱਟੀ ਤੱਕ — ਹਲਕੇ ਸਫ਼ਰ ਲਈ ਸੇਡਾਨ ਚੁਣੋ, ਜਾਂ ਗਰੁੱਪ ਵੱਡਾ ਹੋਣ ਤੇ ਐਸਯੂਵੀ, ਟੈਂਪੋ ਟਰੈਵਲਰ ਜਾਂ ਉਰਬਾਨੀਆ।",
+      "sedans.heading":"ਸੇਡਾਨ","sedans.tag":"4-ਸੀਟਰ, 1–3 ਸਵਾਰੀਆਂ ਲਈ ਸਭ ਤੋਂ ਵਧੀਆ",
+      "suv.heading":"ਐਸਯੂਵੀ ਅਤੇ ਗਰੁੱਪ ਵਾਹਨ","suv.tag":"7 ਤੋਂ 16 ਸੀਟਾਂ, ਪਰਿਵਾਰਾਂ ਅਤੇ ਗਰੁੱਪਾਂ ਲਈ",
+      "car.seats.4std":"4 ਸੀਟਾਂ · ਏਸੀ · 2–3 ਬੈਗਾਂ ਲਈ ਥਾਂ",
+      "car.amaze.desc":"ਆਰਾਮਦਾਇਕ ਅਤੇ ਬਾਲਣ-ਕੁਸ਼ਲ — ਸ਼ਹਿਰ ਦੀ ਯਾਤਰਾ ਅਤੇ ਛੋਟੀਆਂ ਆਊਟਸਟੇਸ਼ਨ ਟ੍ਰਿੱਪਾਂ ਲਈ ਪਸੰਦੀਦਾ।",
+      "car.dzire.desc":"ਪੰਜਾਬ–ਦਿੱਲੀ ਰੂਟ ਤੇ ਆਪਣੀ ਆਰਾਮਦਾਇਕ ਸਵਾਰੀ ਅਤੇ ਮਾਈਲੇਜ ਲਈ ਸਭ ਤੋਂ ਵੱਧ ਮੰਗੀ ਜਾਣ ਵਾਲੀ ਸੇਡਾਨ ਵਿੱਚੋਂ ਇੱਕ।",
+      "car.etios.seats":"4 ਸੀਟਾਂ · ਏਸੀ · ਵੱਡੀ ਡਿੱਕੀ",
+      "car.etios.desc":"ਇੱਕ ਮਜ਼ਬੂਤ, ਖੁੱਲ੍ਹੀ ਸੇਡਾਨ ਜੋ ਲੰਬੇ ਹਾਈਵੇ ਸਫ਼ਰ ਵਿੱਚ ਵੀ ਵਧੀਆ ਚੱਲਦੀ ਹੈ।",
+      "car.innova.seats":"7 ਸੀਟਾਂ · ਏਸੀ · ਪਹਾੜੀ ਰਾਹਾਂ ਲਈ ਪਹਿਲੀ ਪਸੰਦ",
+      "car.innova.desc":"ਹਿਮਾਚਲ, ਕਸ਼ਮੀਰ ਅਤੇ ਉਤਰਾਖੰਡ ਟੂਰ ਲਈ ਪਸੰਦੀਦਾ ਐਸਯੂਵੀ — ਘੁੰਮਣਦਾਰ ਰਾਹਾਂ ਤੇ ਸਥਿਰ ਅਤੇ ਆਰਾਮਦਾਇਕ।",
+      "car.marazzo.seats":"7 ਸੀਟਾਂ · ਏਸੀ · ਖੁੱਲ੍ਹੀ ਕੈਬਿਨ ਥਾਂ",
+      "car.marazzo.desc":"ਲੰਬੇ ਟੂਰ ਤੇ ਇਕੱਠੇ ਸਫ਼ਰ ਕਰਨ ਵਾਲੇ ਪਰਿਵਾਰਾਂ ਲਈ ਖੁੱਲ੍ਹੀ ਲੱਤਾਂ ਵਾਲੀ ਥਾਂ।",
+      "car.ertiga.seats":"7 ਸੀਟਾਂ · ਏਸੀ · ਆਪਣੇ ਆਕਾਰ ਦੇ ਹਿਸਾਬ ਨਾਲ ਕਿਫ਼ਾਇਤੀ",
+      "car.ertiga.desc":"ਛੋਟੇ ਪਰਿਵਾਰਕ ਗਰੁੱਪਾਂ ਲਈ ਇੱਕ ਵਿਹਾਰਕ, ਬਜਟ-ਅਨੁਕੂਲ ਐਸਯੂਵੀ ਬਦਲ।",
+      "car.tt12.name":"ਟੈਂਪੋ ਟਰੈਵਲਰ — 12 ਸੀਟਰ","car.tt12.seats":"12 ਸੀਟਾਂ · ਏਸੀ · ਪੁਸ਼ਬੈਕ ਸੀਟਿੰਗ ਉਪਲਬਧ",
+      "car.tt12.desc":"ਗਰੁੱਪ ਟੂਰ ਅਤੇ ਪਰਿਵਾਰਕ ਸਮਾਗਮਾਂ ਲਈ ਬਣਾਈ ਗਈ, ਜਿੱਥੇ ਸਾਰੇ ਇਕੱਠੇ ਸਫ਼ਰ ਕਰਦੇ ਹਨ।",
+      "car.tt16.name":"ਟੈਂਪੋ ਟਰੈਵਲਰ — 16 ਸੀਟਰ","car.tt16.seats":"16 ਸੀਟਾਂ · ਏਸੀ · ਸਮਾਨ ਲਈ ਵੱਧ ਥਾਂ",
+      "car.tt16.desc":"ਵੱਡੇ ਗਰੁੱਪਾਂ ਲਈ — ਸਕੂਲ ਟ੍ਰਿੱਪ, ਵਿਆਹ, ਜਾਂ ਵੱਡੀ ਪਰਿਵਾਰਕ ਛੁੱਟੀ।",
+      "car.urbania.seats":"12 ਜਾਂ 16 ਸੀਟਾਂ · ਏਸੀ · ਪ੍ਰੀਮੀਅਮ ਹਾਈ-ਰੂਫ਼ ਕੈਬਿਨ",
+      "car.urbania.desc":"ਸਾਡਾ ਸਭ ਤੋਂ ਪ੍ਰੀਮੀਅਮ ਗਰੁੱਪ ਵਾਹਨ — ਵੱਧ ਹੈੱਡਰੂਮ ਅਤੇ ਲੰਬੇ ਟੂਰ ਲਈ ਵਧੀਆ ਸਵਾਰੀ।",
+      "oneway.heading":"ਪੰਜਾਬ ⇄ ਦਿੱਲੀ, ਹਰ ਰੋਜ਼",
+      "oneway.sub":"ਸਾਡਾ ਸਭ ਤੋਂ ਵੱਧ ਬੁੱਕ ਹੋਣ ਵਾਲਾ ਰੂਟ। ਵਨ-ਵੇ ਜਾਂ ਵਾਪਸੀ, ਦਿਨ ਹੋਵੇ ਜਾਂ ਰਾਤ, ਸੇਡਾਨ ਵਿੱਚ ਜਾਂ ਪੂਰੇ ਗਰੁੱਪ ਵਾਹਨ ਵਿੱਚ।",
+      "city.ludhiana":"ਲੁਧਿਆਣਾ","city.jalandhar":"ਜਲੰਧਰ","city.amritsar":"ਅੰਮ੍ਰਿਤਸਰ","city.chandigarh":"ਚੰਡੀਗੜ੍ਹ","city.patiala":"ਪਟਿਆਲਾ","oneway.arrow":"→ ਦਿੱਲੀ ਅਤੇ ਵਾਪਸੀ",
+      "oneway.how":"ਇਹ ਕਿਵੇਂ ਕੰਮ ਕਰਦਾ ਹੈ",
+      "oneway.step1":"ਸਾਨੂੰ ਪੰਜਾਬ ਵਿੱਚ ਆਪਣਾ ਪਿਕਅੱਪ ਪੁਆਇੰਟ ਅਤੇ ਦਿੱਲੀ ਵਿੱਚ ਡ੍ਰੌਪ ਪੁਆਇੰਟ ਦੱਸੋ, ਜਾਂ ਇਸਦੇ ਉਲਟ।",
+      "oneway.step2":"ਹਲਕੇ ਸਮਾਨ ਲਈ ਸੇਡਾਨ ਚੁਣੋ ਜਾਂ ਵੱਡੇ ਗਰੁੱਪ ਲਈ ਐਸਯੂਵੀ/ਟੈਂਪੋ ਟਰੈਵਲਰ।",
+      "oneway.step3":"ਸਫ਼ਰ ਤੋਂ ਪਹਿਲਾਂ ਅਸੀਂ ਵਟਸਐਪ ਤੇ ਕਿਰਾਇਆ ਅਤੇ ਡਰਾਈਵਰ ਦੀ ਜਾਣਕਾਰੀ ਕਨਫਰਮ ਕਰਦੇ ਹਾਂ।",
+      "oneway.cta":"ਇਹ ਰੂਟ ਬੁੱਕ ਕਰੋ",
+      "tours.heading":"ਪੰਜਾਬ ਤੋਂ ਬਾਹਰ ਟੂਰ ਪੈਕੇਜ",
+      "tours.sub":"ਅਜਿਹੇ ਡਰਾਈਵਰ ਨਾਲ ਕਈ ਦਿਨਾਂ ਦੀ ਯਾਤਰਾ ਯੋਜਨਾ ਜੋ ਰਾਹਾਂ ਨੂੰ ਚੰਗੀ ਤਰ੍ਹਾਂ ਜਾਣਦਾ ਹੈ, ਤੁਹਾਡੇ ਗਰੁੱਪ ਮੁਤਾਬਕ ਐਸਯੂਵੀ ਜਾਂ ਟੈਂਪੋ ਟਰੈਵਲਰ ਵਿੱਚ।",
+      "tour.himachal.name":"ਹਿਮਾਚਲ ਪ੍ਰਦੇਸ਼","tour.himachal.places":"ਸ਼ਿਮਲਾ · ਮਨਾਲੀ · ਧਰਮਸ਼ਾਲਾ",
+      "tour.himachal.desc":"ਪਹਾੜੀ ਸਟੇਸ਼ਨ, ਚੀੜ ਦੇ ਜੰਗਲ ਅਤੇ ਪਹਾੜੀ ਦੱਰੇ — ਇਨੋਵਾ ਕ੍ਰਿਸਟਾ ਜਾਂ ਟੈਂਪੋ ਟਰੈਵਲਰ ਵਿੱਚ ਸਭ ਤੋਂ ਵਧੀਆ।",
+      "tour.kashmir.name":"ਕਸ਼ਮੀਰ","tour.kashmir.places":"ਸ੍ਰੀਨਗਰ · ਗੁਲਮਰਗ · ਪਹਿਲਗਾਮ",
+      "tour.kashmir.desc":"ਵਾਦੀਆਂ, ਹਾਊਸਬੋਟ ਅਤੇ ਪਹਾੜੀ ਡਰਾਈਵ — ਐਸਯੂਵੀ ਇਸ ਇਲਾਕੇ ਨੂੰ ਆਸਾਨੀ ਨਾਲ ਸੰਭਾਲਦੀ ਹੈ।",
+      "tour.uttarakhand.name":"ਉਤਰਾਖੰਡ","tour.uttarakhand.places":"ਰਿਸ਼ੀਕੇਸ਼ · ਨੈਨੀਤਾਲ · ਮਸੂਰੀ",
+      "tour.uttarakhand.desc":"ਦਰਿਆ ਕਿਨਾਰੇ ਦੇ ਸ਼ਹਿਰ ਅਤੇ ਝੀਲ ਦੇ ਨਜ਼ਾਰੇ, ਤੁਹਾਡੇ ਗਰੁੱਪ ਦੇ ਆਕਾਰ ਮੁਤਾਬਕ ਸੇਡਾਨ ਜਾਂ ਐਸਯੂਵੀ ਰਾਹੀਂ ਪਹੁੰਚਿਆ ਜਾ ਸਕਦਾ ਹੈ।",
+      "tour.rajasthan.name":"ਰਾਜਸਥਾਨ","tour.rajasthan.places":"ਜੈਪੁਰ · ਉਦੈਪੁਰ · ਜੋਧਪੁਰ",
+      "tour.rajasthan.desc":"ਕਿਲ੍ਹੇ, ਮਹਿਲ ਅਤੇ ਲੰਬੀ ਦੂਰੀ ਦੇ ਰੇਗਿਸਤਾਨੀ ਰਾਹ — ਇਨੋਵਾ ਜਾਂ ਸੇਡਾਨ ਵਿੱਚ ਆਰਾਮਦਾਇਕ।",
+      "tour.up.name":"ਉੱਤਰ ਪ੍ਰਦੇਸ਼","tour.up.places":"ਆਗਰਾ · ਵਾਰਾਣਸੀ · ਲਖਨਊ",
+      "tour.up.desc":"ਇਤਿਹਾਸਕ ਸਮਾਰਕ ਅਤੇ ਦਰਿਆ ਕਿਨਾਰੇ ਦੇ ਘਾਟ — ਇੱਕ ਆਰਾਮਦਾਇਕ ਸੇਡਾਨ ਯਾਤਰਾ ਜਾਂ ਲੰਬੇ ਸਰਕਟ ਦਾ ਹਿੱਸਾ।",
+      "tours.cta":"ਵਟਸਐਪ ਤੇ ਪੁੱਛੋ",
+      "why.heading":"ਲੋਕ ਸਾਡੇ ਨਾਲ ਬੁਕਿੰਗ ਕਿਉਂ ਕਰਦੇ ਹਨ",
+      "why1.title":"ਚੰਗੀ ਤਰ੍ਹਾਂ ਸੰਭਾਲੀਆਂ ਗੱਡੀਆਂ","why1.desc":"ਫਲੀਟ ਦੀ ਹਰ ਗੱਡੀ ਅਤੇ ਵੈਨ ਦੀ ਨਿਯਮਿਤ ਸਰਵਿਸ ਹੁੰਦੀ ਹੈ ਅਤੇ ਹਰ ਸਫ਼ਰ ਤੋਂ ਪਹਿਲਾਂ ਸਫ਼ਾਈ ਕੀਤੀ ਜਾਂਦੀ ਹੈ।",
+      "why2.title":"ਰਾਹ ਜਾਣਨ ਵਾਲੇ ਡਰਾਈਵਰ","why2.desc":"ਪੰਜਾਬ–ਦਿੱਲੀ ਹਾਈਵੇ ਅਤੇ ਪਹਾੜੀ ਰਾਹਾਂ ਤੇ ਹਰ ਮੌਸਮ ਵਿੱਚ ਨਿਯਮਿਤ ਸਫ਼ਰ।",
+      "why3.title":"ਕਿਰਾਇਆ ਸਿੱਧਾ ਤੁਹਾਨੂੰ ਦੱਸਿਆ ਜਾਂਦਾ ਹੈ","why3.desc":"ਕੋਈ ਤੈਅ ਆਨਲਾਈਨ ਕੀਮਤ ਨਹੀਂ — ਸਾਨੂੰ ਆਪਣਾ ਰੂਟ ਅਤੇ ਤਾਰੀਖਾਂ ਦੱਸੋ, ਅਸੀਂ ਵਟਸਐਪ ਤੇ ਸਹੀ ਕਿਰਾਇਆ ਦੱਸਾਂਗੇ।",
+      "why4.title":"ਹਰ ਰੋਜ਼ ਉਪਲਬਧ","why4.desc":"ਸਵੇਰੇ-ਸਵੇਰੇ ਪਿਕਅੱਪ, ਰਾਤ ਭਰ ਦੀ ਡਰਾਈਵ ਅਤੇ ਆਖਰੀ ਸਮੇਂ ਦੀ ਬੁਕਿੰਗ — ਸਭ ਠੀਕ ਹੈ, ਬੱਸ ਸਾਨੂੰ ਮੈਸੇਜ ਕਰੋ।",
+      "ctaband.heading":"ਸਾਨੂੰ ਦੱਸੋ ਤੁਸੀਂ ਕਿੱਥੇ ਜਾ ਰਹੇ ਹੋ",
+      "ctaband.sub":"ਵਟਸਐਪ ਤੇ ਆਪਣਾ ਪਿਕਅੱਪ ਪੁਆਇੰਟ, ਡ੍ਰੌਪ ਪੁਆਇੰਟ ਅਤੇ ਸਫ਼ਰ ਦੀ ਤਾਰੀਖ ਦੱਸੋ — ਅਸੀਂ ਗੱਡੀ ਦੇ ਬਦਲ ਅਤੇ ਕਿਰਾਏ ਨਾਲ ਜਵਾਬ ਦੇਵਾਂਗੇ।",
+      "ctaband.cta1":"ਮੈਸੇਜ ਕਰੋ +91 62837 53933","ctaband.cta2":"ਜਾਂ ਸਾਨੂੰ ਕਾਲ ਕਰੋ",
+      "footer.tagline":"ਪੰਜਾਬ, ਦਿੱਲੀ ਅਤੇ ਉੱਤਰ ਭਾਰਤ ਵਿੱਚ ਟੂਰ ਲਈ ਸੇਡਾਨ, ਐਸਯੂਵੀ ਅਤੇ ਟੈਂਪੋ ਟਰੈਵਲਰ।",
+      "footer.explore":"ਜਾਣਕਾਰੀ","footer.link.fleet":"ਸਾਡੀਆਂ ਗੱਡੀਆਂ","footer.link.oneway":"ਪੰਜਾਬ–ਦਿੱਲੀ ਸੇਵਾ","footer.link.tours":"ਟੂਰ ਪੈਕੇਜ","footer.link.about":"ਸਾਡੇ ਬਾਰੇ",
+      "footer.contact":"ਸੰਪਰਕ ਕਰੋ","footer.whatsapp":"ਵਟਸਐਪ: +91 62837 53933","footer.call":"ਕਾਲ: +91 62837 53933",
+      "footer.copyright":"© 2026 ਸ਼ਰਮਾ ਟੂਰ ਐਂਡ ਟਰੈਵਲਜ਼। ਸਾਰੇ ਕਿਰਾਏ ਵਟਸਐਪ ਤੇ ਵੱਖਰੇ ਤੌਰ ਤੇ ਤੈਅ ਕੀਤੇ ਜਾਂਦੇ ਹਨ।",
+      "footer.location":"ਪੰਜਾਬ ਵਿੱਚ ਸਥਿਤ, ਦਿੱਲੀ ਅਤੇ ਉੱਤਰ ਭਾਰਤ ਦੀ ਸੇਵਾ।"
+    }
+  };
+
+  const originals = {};
+  document.querySelectorAll('[data-i18n]').forEach(el => {
+    originals[el] || (originals[el] = null);
+  });
+  // store English originals up front, keyed by element reference via a WeakMap
+  const englishText = new WeakMap();
+  document.querySelectorAll('[data-i18n]').forEach(el => englishText.set(el, el.textContent));
+
+  function applyLanguage(lang) {
+    document.querySelectorAll('[data-i18n]').forEach(el => {
+      const key = el.getAttribute('data-i18n');
+      if (lang === 'en') {
+        el.textContent = englishText.get(el);
+      } else {
+        const dict = translations[lang];
+        el.textContent = (dict && dict[key]) ? dict[key] : englishText.get(el);
+      }
+    });
+    document.querySelectorAll('.langswitch button').forEach(b => {
+      b.classList.toggle('active', b.getAttribute('data-lang') === lang);
+    });
+    document.documentElement.setAttribute('lang', lang);
+    try { localStorage.setItem('site-lang', lang); } catch (e) {}
+  }
+
+  document.querySelectorAll('.langswitch button').forEach(btn => {
+    btn.addEventListener('click', () => applyLanguage(btn.getAttribute('data-lang')));
+  });
+
+  let savedLang = 'en';
+  try { savedLang = localStorage.getItem('site-lang') || 'en'; } catch (e) {}
+  if (savedLang !== 'en') applyLanguage(savedLang);
+</script>
+
+</body>
+</html>
