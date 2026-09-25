@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Ride With Brothers — Punjab to Delhi and beyond</title>
 <meta name="description" content="Sedans, SUVs and Tempo Travellers for Punjab–Delhi one-way trips and tour packages to Himachal, Kashmir, Uttarakhand, Rajasthan and Uttar Pradesh. Message us on WhatsApp for fares.">
-<link rel="icon" type="image/svg+xml" href="Assets/logo-mark.svg">
+<link rel="icon" type="image/svg+xml" href="assets/logo-mark.svg">
 
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Ride With Brothers">
@@ -13,14 +13,14 @@
 <meta property="og:url" content="https://sharmatourstravels.netlify.app/">
 <meta property="og:title" content="Ride With Brothers — Punjab to Delhi and beyond">
 <meta property="og:description" content="Sedans, SUVs and Tempo Travellers for Punjab–Delhi one-way trips, plus tour packages to Himachal, Kashmir, Uttarakhand, Rajasthan and Uttar Pradesh. Message us on WhatsApp for fares.">
-<meta property="og:image" content="https://sharmatourstravels.netlify.app/Assets/og-image.png">
+<meta property="og:image" content="https://sharmatourstravels.netlify.app/assets/og-image.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Ride With Brothers — Punjab to Delhi and beyond">
 <meta name="twitter:description" content="Sedans, SUVs and Tempo Travellers for Punjab–Delhi one-way trips, plus tour packages to Himachal, Kashmir, Uttarakhand, Rajasthan and Uttar Pradesh.">
-<meta name="twitter:image" content="https://sharmatourstravels.netlify.app/Assets/og-image.png">
+<meta name="twitter:image" content="https://sharmatourstravels.netlify.app/assets/og-image.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;0,9..144,900;1,9..144,500&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -108,8 +108,17 @@
     max-width:1160px;margin:0 auto;
   }
   .nav-left{display:flex;align-items:center;}
-  .brand{display:flex;align-items:center;gap:10px;font-family:'Fraunces',serif;font-weight:700;font-size:20px;color:var(--cream);text-decoration:none;}
-  .brand .mark{width:30px;height:30px;flex:none;}
+  .brand{display:flex;align-items:center;gap:12px;color:var(--cream);text-decoration:none;}
+  .brand .mark{width:38px;height:38px;flex:none;}
+  .brand-copy{display:flex;flex-direction:column;line-height:1;}
+  .brand-name{font-family:'Fraunces',Georgia,serif;font-size:21px;font-weight:700;letter-spacing:-.3px;white-space:nowrap;color:var(--cream);}
+  .brand-name span{color:var(--marigold);}
+  .brand-subtitle{margin-top:5px;font-family:'Public Sans',sans-serif;font-size:10.5px;font-weight:600;letter-spacing:1.4px;text-transform:uppercase;color:#AEB8C7;}
+  .hero-tagline{display:inline-flex;align-items:center;gap:9px;margin-bottom:18px;font-size:14px;font-weight:600;letter-spacing:.6px;color:var(--marigold);}
+  .hero-tagline::before{content:"";width:28px;height:1px;background:var(--marigold);}
+  @media (max-width:520px){.brand .mark{width:31px;height:31px;}.brand-name{font-size:17px;}.brand-subtitle{font-size:8.5px;letter-spacing:1px;}}
+  @media (max-width:400px){.brand{gap:7px;}.brand .mark{width:26px;height:26px;}.brand-name{font-size:15px;}.brand-subtitle{font-size:7.5px;letter-spacing:.8px;}}
+
   .navlinks{display:flex;align-items:center;gap:30px;}
   .navlinks a{color:var(--cream);text-decoration:none;font-size:15px;opacity:.85;}
   .navlinks a:hover{opacity:1;}
@@ -128,7 +137,6 @@
   }
   .langswitch button.active{background:var(--marigold);color:#20140a;}
   @media (max-width:520px){.langswitch{margin-left:10px;}.langswitch button{padding:6px 8px;font-size:12px;}}
-  @media (max-width:400px){.brand{font-size:16px;}.brand .mark{width:24px;height:24px;}}
 
   @media (max-width:860px){
     .navlinks{
@@ -354,7 +362,10 @@
     <div class="nav-left">
       <a href="#top" class="brand">
         <svg class="mark" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><circle cx="20" cy="20" r="18" fill="none" stroke="#E29B34" stroke-width="1.4"/><circle cx="27" cy="12" r="2.4" fill="#E29B34"/><path d="M9 28 L18 12.5 L24 21 L28 16 L34 28 Z" fill="#2F5233"/><path d="M4 28 L13.5 15.5 L21 28 Z" fill="#F1E7CF"/><path d="M13.5 15.5 L16 19 L11.3 21.5 Z" fill="#0F1B2D" opacity="0.16"/><path d="M16.5 35 C17 30 21.5 28 21.5 24 C21.5 20.2 16.8 19.3 17 15" fill="none" stroke="#E29B34" stroke-width="3.8" stroke-linecap="round"/><path d="M16.5 35 C17 30 21.5 28 21.5 24 C21.5 20.2 16.8 19.3 17 15" fill="none" stroke="#F1E7CF" stroke-width="0.9" stroke-linecap="round" stroke-dasharray="1.6 2.6"/></svg>
-        Ride With Brothers
+        <span class="brand-copy">
+          <span class="brand-name">Ride With <span>Brothers</span></span>
+          <span class="brand-subtitle" data-i18n="brand.subtitle">Punjab Cabs &amp; Tours</span>
+        </span>
       </a>
       <div class="langswitch" role="group" aria-label="Choose language">
         <button type="button" data-lang="en" class="active">EN</button>
@@ -389,6 +400,7 @@
   <section class="hero" style="padding-top:76px;padding-bottom:60px;">
     <div class="wrap">
       <div>
+        <div class="hero-tagline" data-i18n="hero.tagline">Trusted rides. Every journey.</div>
         <h1><span data-i18n="hero.title1">Punjab to Delhi,</span><br><span data-i18n="hero.title2">and every hill road </span><span class="accent" data-i18n="hero.accent">in between.</span></h1>
         <p class="lede" data-i18n="hero.lede">Sedans, SUVs and Tempo Travellers for daily one-way trips between Punjab and Delhi, plus tour packages to Himachal, Kashmir, Uttarakhand, Rajasthan and Uttar Pradesh.</p>
         <div class="ctas">
@@ -467,7 +479,7 @@
         <h3><span data-i18n="sedans.heading">Sedans</span> <span class="tag" data-i18n="sedans.tag">4-seater, best for 1–3 passengers</span></h3>
         <div class="cargrid">
           <div class="carcard has-photo">
-            <img class="photo" src="Assets/honda-amaze.png" alt="Honda Amaze sedan on a city road">
+            <img class="photo" src="assets/honda-amaze.png" alt="Honda Amaze sedan on a city road">
             <div class="carcard-body">
               <h4>Honda Amaze</h4>
               <div class="seats" data-i18n="car.seats.4std">4 seats · AC · luggage for 2–3 bags</div>
@@ -476,7 +488,7 @@
             </div>
           </div>
           <div class="carcard has-photo">
-            <img class="photo" src="Assets/swift-dzire.png" alt="Maruti Swift Dzire sedan parked in a neighbourhood">
+            <img class="photo" src="assets/swift-dzire.png" alt="Maruti Swift Dzire sedan parked in a neighbourhood">
             <div class="carcard-body">
               <h4>Maruti Swift Dzire</h4>
               <div class="seats" data-i18n="car.seats.4std">4 seats · AC · luggage for 2–3 bags</div>
@@ -485,7 +497,7 @@
             </div>
           </div>
           <div class="carcard has-photo">
-            <img class="photo" src="Assets/toyota-etios.png" alt="Toyota Etios sedan on a highway">
+            <img class="photo" src="assets/toyota-etios.png" alt="Toyota Etios sedan on a highway">
             <div class="carcard-body">
               <h4>Toyota Etios</h4>
               <div class="seats" data-i18n="car.etios.seats">4 seats · AC · roomy boot space</div>
@@ -500,7 +512,7 @@
         <h3><span data-i18n="suv.heading">SUVs &amp; group vehicles</span> <span class="tag" data-i18n="suv.tag">7 to 16 seats, for families and groups</span></h3>
         <div class="cargrid">
           <div class="carcard has-photo">
-            <img class="photo" src="Assets/innova-crysta.png" alt="Toyota Innova Crysta SUV on a mountain road">
+            <img class="photo" src="assets/innova-crysta.png" alt="Toyota Innova Crysta SUV on a mountain road">
             <div class="carcard-body">
               <h4>Toyota Innova Crysta</h4>
               <div class="seats" data-i18n="car.innova.seats">7 seats · AC · top pick for hill routes</div>
@@ -509,7 +521,7 @@
             </div>
           </div>
           <div class="carcard has-photo">
-            <img class="photo" src="Assets/mahindra-marazzo.png" alt="Mahindra Marazzo SUV parked outdoors">
+            <img class="photo" src="assets/mahindra-marazzo.png" alt="Mahindra Marazzo SUV parked outdoors">
             <div class="carcard-body">
               <h4>Mahindra Marazzo</h4>
               <div class="seats" data-i18n="car.marazzo.seats">7 seats · AC · wide cabin space</div>
@@ -518,7 +530,7 @@
             </div>
           </div>
           <div class="carcard has-photo">
-            <img class="photo" src="Assets/maruti-ertiga.png" alt="Maruti Ertiga SUV on a countryside road">
+            <img class="photo" src="assets/maruti-ertiga.png" alt="Maruti Ertiga SUV on a countryside road">
             <div class="carcard-body">
               <h4>Maruti Ertiga</h4>
               <div class="seats" data-i18n="car.ertiga.seats">7 seats · AC · easy on fuel for its size</div>
@@ -527,7 +539,7 @@
             </div>
           </div>
           <div class="carcard has-photo">
-            <img class="photo" src="Assets/tempo-traveller.png" alt="Tempo Traveller van">
+            <img class="photo" src="assets/tempo-traveller.png" alt="Tempo Traveller van">
             <div class="carcard-body">
               <h4 data-i18n="car.tt12.name">Tempo Traveller — 12 seater</h4>
               <div class="seats" data-i18n="car.tt12.seats">12 seats · AC · pushback seating available</div>
@@ -536,7 +548,7 @@
             </div>
           </div>
           <div class="carcard has-photo">
-            <img class="photo" src="Assets/tempo-traveller.png" alt="Tempo Traveller van">
+            <img class="photo" src="assets/tempo-traveller.png" alt="Tempo Traveller van">
             <div class="carcard-body">
               <h4 data-i18n="car.tt16.name">Tempo Traveller — 16 seater</h4>
               <div class="seats" data-i18n="car.tt16.seats">16 seats · AC · more room for luggage</div>
@@ -545,7 +557,7 @@
             </div>
           </div>
           <div class="carcard has-photo">
-            <img class="photo" src="Assets/force-urbania.png" alt="Force Urbania high-roof van">
+            <img class="photo" src="assets/force-urbania.png" alt="Force Urbania high-roof van">
             <div class="carcard-body">
               <h4>Force Urbania — 12 &amp; 16 seater</h4>
               <div class="seats" data-i18n="car.urbania.seats">12 or 16 seats · AC · premium high-roof cabin</div>
@@ -570,7 +582,7 @@
       <div class="lux-grid">
         <div class="luxcard">
           <div class="lux-art">
-            <img src="Assets/gwagon.jpg" alt="Mercedes G-Wagon on a coastal road" loading="lazy">
+            <img src="assets/gwagon.jpg" alt="Mercedes G-Wagon on a coastal road" loading="lazy">
           </div>
           <div class="lux-body">
             <h3>Mercedes G-Wagon</h3>
@@ -590,7 +602,7 @@
 
         <div class="luxcard">
           <div class="lux-art">
-            <img src="Assets/mustang.jpg" alt="Ford Mustang on a coastal road" loading="lazy">
+            <img src="assets/mustang.jpg" alt="Ford Mustang on a coastal road" loading="lazy">
           </div>
           <div class="lux-body">
             <h3>Ford Mustang</h3>
@@ -767,9 +779,12 @@
       <div>
         <a href="#top" class="brand" style="margin-bottom:12px;">
           <svg class="mark" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><circle cx="20" cy="20" r="18" fill="none" stroke="#E29B34" stroke-width="1.4"/><circle cx="27" cy="12" r="2.4" fill="#E29B34"/><path d="M9 28 L18 12.5 L24 21 L28 16 L34 28 Z" fill="#2F5233"/><path d="M4 28 L13.5 15.5 L21 28 Z" fill="#F1E7CF"/><path d="M13.5 15.5 L16 19 L11.3 21.5 Z" fill="#0F1B2D" opacity="0.16"/><path d="M16.5 35 C17 30 21.5 28 21.5 24 C21.5 20.2 16.8 19.3 17 15" fill="none" stroke="#E29B34" stroke-width="3.8" stroke-linecap="round"/><path d="M16.5 35 C17 30 21.5 28 21.5 24 C21.5 20.2 16.8 19.3 17 15" fill="none" stroke="#F1E7CF" stroke-width="0.9" stroke-linecap="round" stroke-dasharray="1.6 2.6"/></svg>
-          Ride With Brothers
+          <span class="brand-copy">
+            <span class="brand-name">Ride With <span>Brothers</span></span>
+            <span class="brand-subtitle" data-i18n="brand.subtitle">Punjab Cabs &amp; Tours</span>
+          </span>
         </a>
-        <p style="max-width:32ch;font-size:14.5px;" data-i18n="footer.tagline">Sedans, SUVs and Tempo Travellers for Punjab, Delhi and tours across North India.</p>
+        <p style="max-width:32ch;font-size:14.5px;" data-i18n="footer.tagline">Trusted rides. Every journey.</p>
       </div>
       <div class="col">
         <h5 data-i18n="footer.explore">Explore</h5>
@@ -806,6 +821,7 @@
   const translations = {
     hi: {
       "nav.fleet":"गाड़ियां","nav.oneway":"पंजाब–दिल्ली","nav.tours":"टूर पैकेज","nav.about":"हमारे बारे में","nav.why":"हमें क्यों चुनें","nav.whatsapp":"व्हाट्सएप करें","nav.weddings":"शादी",
+      "brand.subtitle":"पंजाब कैब और टूर","hero.tagline":"भरोसेमंद सवारी। हर सफ़र।",
       "hero.title1":"पंजाब से दिल्ली,","hero.title2":"और हर पहाड़ी रास्ता ","hero.accent":"बीच में।",
       "hero.lede":"पंजाब और दिल्ली के बीच रोज़ाना वन-वे यात्रा के लिए सेडान, एसयूवी और टेम्पो ट्रैवलर, साथ ही हिमाचल, कश्मीर, उत्तराखंड, राजस्थान और उत्तर प्रदेश के लिए टूर पैकेज।",
       "hero.cta1":"व्हाट्सएप पर किराया पूछें","hero.cta2":"गाड़ियां देखें",
@@ -869,7 +885,7 @@
       "ctaband.heading":"हमें बताएं आप कहां जा रहे हैं",
       "ctaband.sub":"व्हाट्सएप पर अपना पिकअप पॉइंट, ड्रॉप पॉइंट और यात्रा की तारीख बताएं — हम गाड़ी के विकल्प और किराए के साथ जवाब देंगे।",
       "ctaband.cta1":"मैसेज करें +91 62837 53933","ctaband.cta2":"या हमें कॉल करें",
-      "footer.tagline":"पंजाब, दिल्ली और उत्तर भारत में टूर के लिए सेडान, एसयूवी और टेम्पो ट्रैवलर।",
+      "footer.tagline":"भरोसेमंद सवारी। हर सफ़र।",
       "footer.explore":"जानकारी","footer.link.fleet":"हमारी गाड़ियां","footer.link.oneway":"पंजाब–दिल्ली सेवा","footer.link.tours":"टूर पैकेज","footer.link.about":"हमारे बारे में","footer.link.weddings":"शादी की गाड़ियां",
       "wedding.tag":"वेडिंग रेंटल","wedding.heading":"आपकी शादी के लिए लग्ज़री गाड़ियां",
       "wedding.sub":"पंजाब में आजकल का सबसे बड़ा ट्रेंड — जी-वैगन या मस्टैंग में एंट्री लें। यह हमारी सामान्य फ्लीट से अलग, सिर्फ उस एक दिन को यादगार बनाने के लिए बुक की जाती हैं।",
@@ -882,6 +898,7 @@
     },
     pa: {
       "nav.fleet":"ਗੱਡੀਆਂ","nav.oneway":"ਪੰਜਾਬ–ਦਿੱਲੀ","nav.tours":"ਟੂਰ ਪੈਕੇਜ","nav.about":"ਸਾਡੇ ਬਾਰੇ","nav.why":"ਸਾਨੂੰ ਕਿਉਂ ਚੁਣੋ","nav.whatsapp":"ਵਟਸਐਪ ਕਰੋ","nav.weddings":"ਵਿਆਹ",
+      "brand.subtitle":"ਪੰਜਾਬ ਕੈਬ ਅਤੇ ਟੂਰ","hero.tagline":"ਭਰੋਸੇਮੰਦ ਸਵਾਰੀ। ਹਰ ਸਫ਼ਰ।",
       "hero.title1":"ਪੰਜਾਬ ਤੋਂ ਦਿੱਲੀ,","hero.title2":"ਅਤੇ ਹਰ ਪਹਾੜੀ ਰਾਹ ","hero.accent":"ਵਿਚਕਾਰ।",
       "hero.lede":"ਪੰਜਾਬ ਅਤੇ ਦਿੱਲੀ ਵਿਚਕਾਰ ਰੋਜ਼ਾਨਾ ਵਨ-ਵੇ ਸਫ਼ਰ ਲਈ ਸੇਡਾਨ, ਐਸਯੂਵੀ ਅਤੇ ਟੈਂਪੋ ਟਰੈਵਲਰ, ਨਾਲ ਹੀ ਹਿਮਾਚਲ, ਕਸ਼ਮੀਰ, ਉਤਰਾਖੰਡ, ਰਾਜਸਥਾਨ ਅਤੇ ਉੱਤਰ ਪ੍ਰਦੇਸ਼ ਲਈ ਟੂਰ ਪੈਕੇਜ।",
       "hero.cta1":"ਵਟਸਐਪ ਤੇ ਕਿਰਾਇਆ ਪੁੱਛੋ","hero.cta2":"ਗੱਡੀਆਂ ਵੇਖੋ",
@@ -945,7 +962,7 @@
       "ctaband.heading":"ਸਾਨੂੰ ਦੱਸੋ ਤੁਸੀਂ ਕਿੱਥੇ ਜਾ ਰਹੇ ਹੋ",
       "ctaband.sub":"ਵਟਸਐਪ ਤੇ ਆਪਣਾ ਪਿਕਅੱਪ ਪੁਆਇੰਟ, ਡ੍ਰੌਪ ਪੁਆਇੰਟ ਅਤੇ ਸਫ਼ਰ ਦੀ ਤਾਰੀਖ ਦੱਸੋ — ਅਸੀਂ ਗੱਡੀ ਦੇ ਬਦਲ ਅਤੇ ਕਿਰਾਏ ਨਾਲ ਜਵਾਬ ਦੇਵਾਂਗੇ।",
       "ctaband.cta1":"ਮੈਸੇਜ ਕਰੋ +91 62837 53933","ctaband.cta2":"ਜਾਂ ਸਾਨੂੰ ਕਾਲ ਕਰੋ",
-      "footer.tagline":"ਪੰਜਾਬ, ਦਿੱਲੀ ਅਤੇ ਉੱਤਰ ਭਾਰਤ ਵਿੱਚ ਟੂਰ ਲਈ ਸੇਡਾਨ, ਐਸਯੂਵੀ ਅਤੇ ਟੈਂਪੋ ਟਰੈਵਲਰ।",
+      "footer.tagline":"ਭਰੋਸੇਮੰਦ ਸਵਾਰੀ। ਹਰ ਸਫ਼ਰ।",
       "footer.explore":"ਜਾਣਕਾਰੀ","footer.link.fleet":"ਸਾਡੀਆਂ ਗੱਡੀਆਂ","footer.link.oneway":"ਪੰਜਾਬ–ਦਿੱਲੀ ਸੇਵਾ","footer.link.tours":"ਟੂਰ ਪੈਕੇਜ","footer.link.about":"ਸਾਡੇ ਬਾਰੇ","footer.link.weddings":"ਵਿਆਹ ਦੀਆਂ ਗੱਡੀਆਂ",
       "wedding.tag":"ਵੈਡਿੰਗ ਰੈਂਟਲ","wedding.heading":"ਤੁਹਾਡੇ ਵਿਆਹ ਲਈ ਲਗਜ਼ਰੀ ਗੱਡੀਆਂ",
       "wedding.sub":"ਪੰਜਾਬ ਵਿੱਚ ਅੱਜਕੱਲ੍ਹ ਦਾ ਸਭ ਤੋਂ ਵੱਡਾ ਰੁਝਾਨ — ਜੀ-ਵੈਗਨ ਜਾਂ ਮਸਟੈਂਗ ਵਿੱਚ ਐਂਟਰੀ ਕਰੋ। ਇਹ ਸਾਡੀ ਆਮ ਫਲੀਟ ਤੋਂ ਵੱਖਰੇ ਤੌਰ ਤੇ, ਸਿਰਫ਼ ਉਸ ਇੱਕ ਦਿਨ ਨੂੰ ਯਾਦਗਾਰ ਬਣਾਉਣ ਲਈ ਬੁੱਕ ਕੀਤੀਆਂ ਜਾਂਦੀਆਂ ਹਨ।",
