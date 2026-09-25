@@ -235,6 +235,23 @@
   @media (max-width:900px){.cargrid{grid-template-columns:repeat(2,1fr);}}
   @media (max-width:560px){.cargrid{grid-template-columns:1fr;}}
 
+  /* ---------- Wedding luxury cars ---------- */
+  .weddings{background:var(--navy);color:var(--cream);}
+  .weddings .tag.gold{display:inline-block;font-size:13px;font-weight:600;letter-spacing:0.02em;color:var(--marigold);background:rgba(226,155,52,0.12);border:1px solid rgba(226,155,52,0.35);padding:6px 14px;border-radius:999px;margin-bottom:16px;}
+  .lux-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:8px;}
+  .luxcard{border:1px solid var(--line-onnavy);border-radius:14px;overflow:hidden;background:rgba(250,243,228,0.03);}
+  .lux-art{background:var(--navy);height:190px;overflow:hidden;}
+  .lux-art img{width:100%;height:100%;object-fit:cover;display:block;}
+  .lux-body{padding:22px 24px 26px;}
+  .lux-body h3{font-family:'Fraunces',serif;font-weight:600;font-size:23px;color:var(--cream);margin-bottom:8px;}
+  .lux-tag{font-size:14.5px;color:#C9CEDA;margin-bottom:18px;min-height:42px;}
+  .lux-ctas{display:flex;flex-direction:column;gap:10px;}
+  .btn-wa{display:flex;align-items:center;gap:10px;border:1px solid rgba(226,155,52,0.4);border-radius:8px;padding:10px 14px;text-decoration:none;color:var(--cream);font-size:14.5px;font-weight:600;transition:border-color .2s ease, background .2s ease;}
+  .btn-wa:hover{border-color:var(--marigold);background:rgba(226,155,52,0.08);}
+  .btn-wa svg{width:18px;height:18px;flex:none;color:#25D366;}
+  .lux-note{margin-top:26px;font-size:14px;color:#9BA6B8;text-align:center;}
+  @media (max-width:760px){.lux-grid{grid-template-columns:1fr;}}
+
   /* ---------- One-way route section ---------- */
   .oneway{background:var(--navy);color:var(--cream);}
   .oneway-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start;}
@@ -350,6 +367,7 @@
     </button>
     <div class="navlinks" id="navLinks">
       <a href="#fleet" data-i18n="nav.fleet">Fleet</a>
+      <a href="#weddings" data-i18n="nav.weddings">Weddings</a>
       <a href="#oneway" data-i18n="nav.oneway">Punjab–Delhi</a>
       <a href="#tours" data-i18n="nav.tours">Tour packages</a>
       <a href="#about" data-i18n="nav.about">About us</a>
@@ -540,6 +558,61 @@
     </div>
   </section>
 
+  <!-- WEDDING LUXURY CARS -->
+  <section id="weddings" class="weddings">
+    <div class="wrap">
+      <div class="section-head on-dark">
+        <span class="tag gold" data-i18n="wedding.tag">Wedding rentals</span>
+        <h2 data-i18n="wedding.heading">Luxury cars for your wedding day</h2>
+        <p data-i18n="wedding.sub">Punjab's biggest wedding trend right now — arrive in a G-Wagon or a Mustang. Booked separately from our regular fleet, for the one day it needs to be unforgettable.</p>
+      </div>
+
+      <div class="lux-grid">
+        <div class="luxcard">
+          <div class="lux-art">
+            <img src="assets/gwagon.jpg" alt="Mercedes G-Wagon on a coastal road" loading="lazy">
+          </div>
+          <div class="lux-body">
+            <h3>Mercedes G-Wagon</h3>
+            <div class="lux-tag" data-i18n="wedding.gwagon.tag">Bold, boxy, unmistakable — the current favourite for baraat entries</div>
+            <div class="lux-ctas">
+              <a class="btn-wa" href="https://wa.me/916283753933?text=Hi%2C%20I%27d%20like%20to%20enquire%20about%20renting%20the%20G-Wagon%20for%20a%20wedding." target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.6.1-.2.3-.7.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.4-.5c.1-.1.2-.3.2-.4.1-.2 0-.3 0-.5-.1-.1-.6-1.5-.8-2-.2-.5-.4-.5-.6-.5h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.1 0 1.2.9 2.4 1 2.6.1.2 1.8 2.8 4.4 3.9.6.3 1.1.4 1.5.5.6.2 1.2.2 1.6.1.5-.1 1.7-.7 1.9-1.3.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.6-.3z"/><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5.1-1.3A10 10 0 1 0 12 2zm0 18.2c-1.6 0-3.1-.4-4.4-1.2l-.3-.2-3.1.8.8-3-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg>
+                <span data-i18n="wedding.num1">+91 62837 53933</span>
+              </a>
+              <a class="btn-wa" href="https://wa.me/919877993425?text=Hi%2C%20I%27d%20like%20to%20enquire%20about%20renting%20the%20G-Wagon%20for%20a%20wedding." target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.6.1-.2.3-.7.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.4-.5c.1-.1.2-.3.2-.4.1-.2 0-.3 0-.5-.1-.1-.6-1.5-.8-2-.2-.5-.4-.5-.6-.5h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.1 0 1.2.9 2.4 1 2.6.1.2 1.8 2.8 4.4 3.9.6.3 1.1.4 1.5.5.6.2 1.2.2 1.6.1.5-.1 1.7-.7 1.9-1.3.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.6-.3z"/><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5.1-1.3A10 10 0 1 0 12 2zm0 18.2c-1.6 0-3.1-.4-4.4-1.2l-.3-.2-3.1.8.8-3-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg>
+                <span data-i18n="wedding.num2">+91 98779 93425</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="luxcard">
+          <div class="lux-art">
+            <img src="assets/mustang.jpg" alt="Ford Mustang on a coastal road" loading="lazy">
+          </div>
+          <div class="lux-body">
+            <h3>Ford Mustang</h3>
+            <div class="lux-tag" data-i18n="wedding.mustang.tag">A convertible-style showpiece for the couple's grand entry or exit</div>
+            <div class="lux-ctas">
+              <a class="btn-wa" href="https://wa.me/916283753933?text=Hi%2C%20I%27d%20like%20to%20enquire%20about%20renting%20the%20Mustang%20for%20a%20wedding." target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.6.1-.2.3-.7.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.4-.5c.1-.1.2-.3.2-.4.1-.2 0-.3 0-.5-.1-.1-.6-1.5-.8-2-.2-.5-.4-.5-.6-.5h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.1 0 1.2.9 2.4 1 2.6.1.2 1.8 2.8 4.4 3.9.6.3 1.1.4 1.5.5.6.2 1.2.2 1.6.1.5-.1 1.7-.7 1.9-1.3.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.6-.3z"/><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5.1-1.3A10 10 0 1 0 12 2zm0 18.2c-1.6 0-3.1-.4-4.4-1.2l-.3-.2-3.1.8.8-3-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg>
+                <span data-i18n="wedding.num1">+91 62837 53933</span>
+              </a>
+              <a class="btn-wa" href="https://wa.me/919877993425?text=Hi%2C%20I%27d%20like%20to%20enquire%20about%20renting%20the%20Mustang%20for%20a%20wedding." target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.6.1-.2.3-.7.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.4-.5c.1-.1.2-.3.2-.4.1-.2 0-.3 0-.5-.1-.1-.6-1.5-.8-2-.2-.5-.4-.5-.6-.5h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.1 0 1.2.9 2.4 1 2.6.1.2 1.8 2.8 4.4 3.9.6.3 1.1.4 1.5.5.6.2 1.2.2 1.6.1.5-.1 1.7-.7 1.9-1.3.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.6-.3z"/><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5.1-1.3A10 10 0 1 0 12 2zm0 18.2c-1.6 0-3.1-.4-4.4-1.2l-.3-.2-3.1.8.8-3-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg>
+                <span data-i18n="wedding.num2">+91 98779 93425</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <p class="lux-note" data-i18n="wedding.note">Looking for a different car for the wedding? Reach out to us on WhatsApp at either number above — we can arrange other options too.</p>
+    </div>
+  </section>
+
   <!-- ONE WAY -->
   <section id="oneway" class="oneway">
     <div class="wrap oneway-grid">
@@ -701,6 +774,7 @@
       <div class="col">
         <h5 data-i18n="footer.explore">Explore</h5>
         <a href="#fleet" data-i18n="footer.link.fleet">Our fleet</a>
+        <a href="#weddings" data-i18n="footer.link.weddings">Wedding cars</a>
         <a href="#oneway" data-i18n="footer.link.oneway">Punjab–Delhi service</a>
         <a href="#tours" data-i18n="footer.link.tours">Tour packages</a>
         <a href="#about" data-i18n="footer.link.about">About us</a>
@@ -731,7 +805,7 @@
 
   const translations = {
     hi: {
-      "nav.fleet":"गाड़ियां","nav.oneway":"पंजाब–दिल्ली","nav.tours":"टूर पैकेज","nav.about":"हमारे बारे में","nav.why":"हमें क्यों चुनें","nav.whatsapp":"व्हाट्सएप करें",
+      "nav.fleet":"गाड़ियां","nav.oneway":"पंजाब–दिल्ली","nav.tours":"टूर पैकेज","nav.about":"हमारे बारे में","nav.why":"हमें क्यों चुनें","nav.whatsapp":"व्हाट्सएप करें","nav.weddings":"शादी",
       "hero.title1":"पंजाब से दिल्ली,","hero.title2":"और हर पहाड़ी रास्ता ","hero.accent":"बीच में।",
       "hero.lede":"पंजाब और दिल्ली के बीच रोज़ाना वन-वे यात्रा के लिए सेडान, एसयूवी और टेम्पो ट्रैवलर, साथ ही हिमाचल, कश्मीर, उत्तराखंड, राजस्थान और उत्तर प्रदेश के लिए टूर पैकेज।",
       "hero.cta1":"व्हाट्सएप पर किराया पूछें","hero.cta2":"गाड़ियां देखें",
@@ -796,13 +870,18 @@
       "ctaband.sub":"व्हाट्सएप पर अपना पिकअप पॉइंट, ड्रॉप पॉइंट और यात्रा की तारीख बताएं — हम गाड़ी के विकल्प और किराए के साथ जवाब देंगे।",
       "ctaband.cta1":"मैसेज करें +91 62837 53933","ctaband.cta2":"या हमें कॉल करें",
       "footer.tagline":"पंजाब, दिल्ली और उत्तर भारत में टूर के लिए सेडान, एसयूवी और टेम्पो ट्रैवलर।",
-      "footer.explore":"जानकारी","footer.link.fleet":"हमारी गाड़ियां","footer.link.oneway":"पंजाब–दिल्ली सेवा","footer.link.tours":"टूर पैकेज","footer.link.about":"हमारे बारे में",
+      "footer.explore":"जानकारी","footer.link.fleet":"हमारी गाड़ियां","footer.link.oneway":"पंजाब–दिल्ली सेवा","footer.link.tours":"टूर पैकेज","footer.link.about":"हमारे बारे में","footer.link.weddings":"शादी की गाड़ियां",
+      "wedding.tag":"वेडिंग रेंटल","wedding.heading":"आपकी शादी के लिए लग्ज़री गाड़ियां",
+      "wedding.sub":"पंजाब में आजकल का सबसे बड़ा ट्रेंड — जी-वैगन या मस्टैंग में एंट्री लें। यह हमारी सामान्य फ्लीट से अलग, सिर्फ उस एक दिन को यादगार बनाने के लिए बुक की जाती हैं।",
+      "wedding.gwagon.tag":"बोल्ड, चौकोर, और सबसे अलग — बारात एंट्री के लिए इस समय की पहली पसंद।",
+      "wedding.mustang.tag":"दूल्हा-दुल्हन की शानदार एंट्री या एग्ज़िट के लिए एक कन्वर्टिबल-स्टाइल शोपीस।",
+      "wedding.note":"शादी के लिए कोई और गाड़ी चाहिए? ऊपर दिए किसी भी नंबर पर हमें व्हाट्सएप करें — हम दूसरे विकल्प भी दिला सकते हैं।",
       "footer.contact":"संपर्क करें","footer.whatsapp":"व्हाट्सएप: +91 62837 53933","footer.call":"कॉल: +91 62837 53933",
       "footer.copyright":"© 2026 Ride With Brothers। सभी किराए व्हाट्सएप पर अलग से तय किए जाते हैं।",
       "footer.location":"पंजाब में स्थित, दिल्ली और उत्तर भारत की सेवा।"
     },
     pa: {
-      "nav.fleet":"ਗੱਡੀਆਂ","nav.oneway":"ਪੰਜਾਬ–ਦਿੱਲੀ","nav.tours":"ਟੂਰ ਪੈਕੇਜ","nav.about":"ਸਾਡੇ ਬਾਰੇ","nav.why":"ਸਾਨੂੰ ਕਿਉਂ ਚੁਣੋ","nav.whatsapp":"ਵਟਸਐਪ ਕਰੋ",
+      "nav.fleet":"ਗੱਡੀਆਂ","nav.oneway":"ਪੰਜਾਬ–ਦਿੱਲੀ","nav.tours":"ਟੂਰ ਪੈਕੇਜ","nav.about":"ਸਾਡੇ ਬਾਰੇ","nav.why":"ਸਾਨੂੰ ਕਿਉਂ ਚੁਣੋ","nav.whatsapp":"ਵਟਸਐਪ ਕਰੋ","nav.weddings":"ਵਿਆਹ",
       "hero.title1":"ਪੰਜਾਬ ਤੋਂ ਦਿੱਲੀ,","hero.title2":"ਅਤੇ ਹਰ ਪਹਾੜੀ ਰਾਹ ","hero.accent":"ਵਿਚਕਾਰ।",
       "hero.lede":"ਪੰਜਾਬ ਅਤੇ ਦਿੱਲੀ ਵਿਚਕਾਰ ਰੋਜ਼ਾਨਾ ਵਨ-ਵੇ ਸਫ਼ਰ ਲਈ ਸੇਡਾਨ, ਐਸਯੂਵੀ ਅਤੇ ਟੈਂਪੋ ਟਰੈਵਲਰ, ਨਾਲ ਹੀ ਹਿਮਾਚਲ, ਕਸ਼ਮੀਰ, ਉਤਰਾਖੰਡ, ਰਾਜਸਥਾਨ ਅਤੇ ਉੱਤਰ ਪ੍ਰਦੇਸ਼ ਲਈ ਟੂਰ ਪੈਕੇਜ।",
       "hero.cta1":"ਵਟਸਐਪ ਤੇ ਕਿਰਾਇਆ ਪੁੱਛੋ","hero.cta2":"ਗੱਡੀਆਂ ਵੇਖੋ",
@@ -867,7 +946,12 @@
       "ctaband.sub":"ਵਟਸਐਪ ਤੇ ਆਪਣਾ ਪਿਕਅੱਪ ਪੁਆਇੰਟ, ਡ੍ਰੌਪ ਪੁਆਇੰਟ ਅਤੇ ਸਫ਼ਰ ਦੀ ਤਾਰੀਖ ਦੱਸੋ — ਅਸੀਂ ਗੱਡੀ ਦੇ ਬਦਲ ਅਤੇ ਕਿਰਾਏ ਨਾਲ ਜਵਾਬ ਦੇਵਾਂਗੇ।",
       "ctaband.cta1":"ਮੈਸੇਜ ਕਰੋ +91 62837 53933","ctaband.cta2":"ਜਾਂ ਸਾਨੂੰ ਕਾਲ ਕਰੋ",
       "footer.tagline":"ਪੰਜਾਬ, ਦਿੱਲੀ ਅਤੇ ਉੱਤਰ ਭਾਰਤ ਵਿੱਚ ਟੂਰ ਲਈ ਸੇਡਾਨ, ਐਸਯੂਵੀ ਅਤੇ ਟੈਂਪੋ ਟਰੈਵਲਰ।",
-      "footer.explore":"ਜਾਣਕਾਰੀ","footer.link.fleet":"ਸਾਡੀਆਂ ਗੱਡੀਆਂ","footer.link.oneway":"ਪੰਜਾਬ–ਦਿੱਲੀ ਸੇਵਾ","footer.link.tours":"ਟੂਰ ਪੈਕੇਜ","footer.link.about":"ਸਾਡੇ ਬਾਰੇ",
+      "footer.explore":"ਜਾਣਕਾਰੀ","footer.link.fleet":"ਸਾਡੀਆਂ ਗੱਡੀਆਂ","footer.link.oneway":"ਪੰਜਾਬ–ਦਿੱਲੀ ਸੇਵਾ","footer.link.tours":"ਟੂਰ ਪੈਕੇਜ","footer.link.about":"ਸਾਡੇ ਬਾਰੇ","footer.link.weddings":"ਵਿਆਹ ਦੀਆਂ ਗੱਡੀਆਂ",
+      "wedding.tag":"ਵੈਡਿੰਗ ਰੈਂਟਲ","wedding.heading":"ਤੁਹਾਡੇ ਵਿਆਹ ਲਈ ਲਗਜ਼ਰੀ ਗੱਡੀਆਂ",
+      "wedding.sub":"ਪੰਜਾਬ ਵਿੱਚ ਅੱਜਕੱਲ੍ਹ ਦਾ ਸਭ ਤੋਂ ਵੱਡਾ ਰੁਝਾਨ — ਜੀ-ਵੈਗਨ ਜਾਂ ਮਸਟੈਂਗ ਵਿੱਚ ਐਂਟਰੀ ਕਰੋ। ਇਹ ਸਾਡੀ ਆਮ ਫਲੀਟ ਤੋਂ ਵੱਖਰੇ ਤੌਰ ਤੇ, ਸਿਰਫ਼ ਉਸ ਇੱਕ ਦਿਨ ਨੂੰ ਯਾਦਗਾਰ ਬਣਾਉਣ ਲਈ ਬੁੱਕ ਕੀਤੀਆਂ ਜਾਂਦੀਆਂ ਹਨ।",
+      "wedding.gwagon.tag":"ਬੋਲਡ, ਚੌਕੋਰ ਅਤੇ ਸਭ ਤੋਂ ਵੱਖਰੀ — ਬਰਾਤ ਐਂਟਰੀ ਲਈ ਇਸ ਵੇਲੇ ਦੀ ਪਹਿਲੀ ਪਸੰਦ।",
+      "wedding.mustang.tag":"ਲਾੜਾ-ਲਾੜੀ ਦੀ ਸ਼ਾਨਦਾਰ ਐਂਟਰੀ ਜਾਂ ਐਗਜ਼ਿਟ ਲਈ ਇੱਕ ਕਨਵਰਟੀਬਲ-ਸਟਾਈਲ ਸ਼ੋਪੀਸ।",
+      "wedding.note":"ਵਿਆਹ ਲਈ ਕੋਈ ਹੋਰ ਗੱਡੀ ਚਾਹੀਦੀ ਹੈ? ਉੱਪਰ ਦਿੱਤੇ ਕਿਸੇ ਵੀ ਨੰਬਰ ਤੇ ਸਾਨੂੰ ਵਟਸਐਪ ਕਰੋ — ਅਸੀਂ ਹੋਰ ਬਦਲ ਵੀ ਦਿਵਾ ਸਕਦੇ ਹਾਂ।",
       "footer.contact":"ਸੰਪਰਕ ਕਰੋ","footer.whatsapp":"ਵਟਸਐਪ: +91 62837 53933","footer.call":"ਕਾਲ: +91 62837 53933",
       "footer.copyright":"© 2026 Ride With Brothers। ਸਾਰੇ ਕਿਰਾਏ ਵਟਸਐਪ ਤੇ ਵੱਖਰੇ ਤੌਰ ਤੇ ਤੈਅ ਕੀਤੇ ਜਾਂਦੇ ਹਨ।",
       "footer.location":"ਪੰਜਾਬ ਵਿੱਚ ਸਥਿਤ, ਦਿੱਲੀ ਅਤੇ ਉੱਤਰ ਭਾਰਤ ਦੀ ਸੇਵਾ।"
